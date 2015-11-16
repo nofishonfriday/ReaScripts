@@ -1,6 +1,9 @@
+-- Realtime clock
+-- see http://forum.cockos.com/showthread.php?t=165884
+
+
 -- based on spk77's GUI template, thanks
 -- http://forum.cockos.com/showthread.php?t=161557 
-
 
 -- cooldown function (CPU saver) by Jeffos, thanks
 -- http://forum.cockos.com/showpost.php?p=1567657&postcount=39

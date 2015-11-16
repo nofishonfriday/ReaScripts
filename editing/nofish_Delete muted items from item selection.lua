@@ -1,3 +1,6 @@
+-- Delete muted items from item selection v1.0
+-- see http://forum.cockos.com/showpost.php?p=1589221&postcount=4
+
 -- for debugging
 function msg(m)
   reaper.ShowConsoleMsg(tostring(m) .. "\n")
