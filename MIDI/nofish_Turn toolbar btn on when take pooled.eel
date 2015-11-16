@@ -1,0 +1,23 @@
+lstate = -1;
+
+function run(finishup)
+(
+  // check if take is pooled
+  take = MIDIEditor_GetTake(MIDIEditor_GetActive());
+  isPooled = extension_api("BR_GetMidiTakePoolGUID", take, #guidStringOut); // returns true if take is pooled
+  
+  // toolbar toggle state example by Jeffos
+  get_action_context(#fn,sec,cmd);
+  state=finishup ? -1 : (isPooled);
+  state != lstate ? 
+  (
+    SetToggleCommandState(sec, cmd, state);
+    RefreshToolbar2(sec, cmd);
+    lstate=state;
+  );
+  !finishup ? defer("run(0);");
+);
+
+
+defer("run(0);");
+atexit("run(1);");
