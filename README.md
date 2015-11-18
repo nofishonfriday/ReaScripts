@@ -17,10 +17,10 @@ http://forum.cockos.com/showpost.php?p=1589221&postcount=4
 Dynamic mixer.lua   
 http://forum.cockos.com/showthread.php?t=166554
 
-Realtime clock    
+Realtime clock.lua   
 http://forum.cockos.com/showthread.php?t=165884
 
-Save track FX chains (for selected tracks)    
+Save track FX chains (for selected tracks).lua  
 http://forum.cockos.com/showpost.php?p=1596059&postcount=26 (mod from mpl's version)
 
 
