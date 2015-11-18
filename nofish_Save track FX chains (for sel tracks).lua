@@ -3,7 +3,7 @@
     v1.0
     
     a mod from 'mpl_Save_all_track_FX_chains.lua' found here:
-    http://forum.cockos.com/showthread.php?t=167250
+    http://forum.cockos.com/showpost.php?p=1596059&postcount=26
     
     this versions saves FX chains for all tracks if no track is selected
     otherwise it saves the FX chains for the selected tracks
