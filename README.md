@@ -1,0 +1,26 @@
+## Currently available scripts (Nov. 18 2015) ##
+
+**MIDI**   
+
+Turn toolbar button on when take is pooled.eel    
+http://forum.cockos.com/showthread.php?t=163359    
+
+
+**editing**    
+
+Delete muted items from item selection.lua    
+http://forum.cockos.com/showpost.php?p=1589221&postcount=4    
+
+
+**misc**
+
+Dynamic mixer.lua   
+http://forum.cockos.com/showthread.php?t=166554
+
+Realtime clock    
+http://forum.cockos.com/showthread.php?t=165884
+
+Save track FX chains (for selected tracks)    
+http://forum.cockos.com/showpost.php?p=1596059&postcount=26 (mod from mpl's version)
+
+
