@@ -23,4 +23,8 @@ http://forum.cockos.com/showthread.php?t=165884
 Save track FX chains (for selected tracks).lua  
 http://forum.cockos.com/showpost.php?p=1596059&postcount=26 (mod from mpl's version)
 
+List tracknames in console.lua
+http://forum.cockos.com/showpost.php?p=1597751&postcount=6
+
+
 
