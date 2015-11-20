@@ -1,0 +1,71 @@
+// nofish_Write tracknames to textfile.eel v1.2
+// writes a textfile 'Tracknames.txt' to project directory (\'media subfolder' if set in Project settings), (\REAPER Media if project is empty / not saved)
+// see 
+
+
+EnumProjects(-1, #project_name); // get .rpp path + project name;
+match (#project_name, "") ? #project_name = "unsaved project";
+  
+GetProjectPath(#filepath);
+strcat(#filepath, "\\Tracknames.txt");
+
+// version for fixed directory:
+// #filepath = "C:\\Tracknames\\Tracknames.txt"; // edit this path where you want the textfile (.txt) written
+// NOTE: directory must exist, otherwise it throws an error !, the textfile itself is created automatically
+
+function msg_s(m)
+(
+  ShowConsoleMsg(m);
+  ShowConsoleMsg("\n");
+);
+
+function msg_d(m)
+(
+  ShowConsoleMsg(sprintf(#, "%d", m));
+  ShowConsoleMsg("\n");
+);
+
+
+msg_s(""); // clear console
+i = 0;
+#written_trackname = "";
+
+fopen(#filepath,"w"); // to delete previously written textfile
+// if above is commented out, new data is appended to the previously existing textfile
+file = fopen(#filepath,"a"); // open file in append mode
+
+// write project path + project name
+strcat (#project_name, "\n\n");
+fwrite(file, #project_name, 0);
+
+loop(CountTracks(0), // loop through tracks
+  (track = GetTrack(0, i)) ? (  // if track pointer != 0 -> do the code inside brackets
+    GetSetMediaTrackInfo_String(track, "P_NAME", #track_name, 0); // get track name
+    // msg_s(#track_name); 
+    
+    sprintf(#written_trackname, "%03d", i+1);
+    strcat (#written_trackname, "|"); // append " "
+    !match (#track_name, "") ? // if track_name not ""...
+    (
+      strcat (#written_trackname, #track_name) // appen the actual trackname
+    ) : // else if track_name = "" (unnamed track)
+    (
+      #track_name = "-"; // append "-"
+      strcat (#written_trackname, #track_name);
+    ); 
+    strcat (#written_trackname, "\n"); // append newline
+    file_length = fwrite(file,#written_trackname,0); // write (append) the string to file
+  ); // end of GetTrack()
+  i += 1; // increment track number
+); // end of loop through tracks
+
+file_length > 0 ?
+(
+  msg_s("Done ! Tracknames written to: ");
+  msg_s(#filepath);
+) :
+(
+  msg_s("Something went wrong...")
+);
+fclose(file); // close the file
+
