@@ -1,5 +1,5 @@
 // nofish_Write tracknames to textfile.eel v1.2
-// writes a textfile 'Tracknames.txt' to project directory (\'media subfolder' if set in Project settings), (\REAPER Media if project is empty / not saved)
+// writes a textfile 'Tracknames.txt' to project directory (\'media subfolder' if set in Project settings, '\REAPER Media' if project is not saved)
 // see 
 
 
