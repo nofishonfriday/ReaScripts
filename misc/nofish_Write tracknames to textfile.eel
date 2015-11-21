@@ -1,6 +1,6 @@
 // nofish_Write tracknames to textfile.eel v1.2
 // writes a textfile 'Tracknames.txt' to project directory (\'media subfolder' if set in Project settings, '\REAPER Media' if project is not saved)
-// see 
+// see http://forum.cockos.com/showthread.php?t=169099
 
 
 EnumProjects(-1, #project_name); // get .rpp path + project name;

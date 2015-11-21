@@ -1,4 +1,4 @@
-## Currently available scripts (Nov. 18 2015) ##
+## Currently available scripts (Nov. 21 2015) ##
 
 **MIDI**   
 
@@ -26,7 +26,8 @@ http://forum.cockos.com/showpost.php?p=1596059&postcount=26 (mod from mpl's vers
 List tracknames in console.lua      
 http://forum.cockos.com/showpost.php?p=1597751&postcount=6
 
-Write tracknames to textfile.eel  
+Write tracknames to textfile.eel   
+http://forum.cockos.com/showthread.php?t=169099
 
 
 
