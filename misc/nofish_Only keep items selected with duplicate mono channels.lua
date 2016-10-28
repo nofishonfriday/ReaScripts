@@ -47,7 +47,46 @@ debug = 1
   for i = 0, selected_items_count-1  do
     -- GET ITEMS
     item = reaper.GetSelectedMediaItem(0, i) -- Get selected item i
-  
+    
+    --[[
+       algo:
+       https://www.gearslutz.com/board/5826380-post7.html
+       
+       A = wavread('filename');
+       A_left = A(:,1);
+       A_right = A(:,2);
+       mono_test = sum(A_left - A_right);
+       if (mono_test > 0)
+       disp('Input file is stereo');
+       else
+       disp('Input file is dual mono');
+       end %if
+       --]]
+       
+    if item then
+      local item_pos = reaper.GetMediaItemInfo_Value(item, "D_POSITION")
+      local take = reaper.GetActiveTake(item) -- Get the active take   
+      -- Get media source of media item take
+      local take_pcm_source = reaper.GetMediaItemTake_Source(take)   
+      -- Get media source of media item take       
+      local take_pcm_source = reaper.GetMediaItemTake_Source(take)
+      
+      -- Create take audio accessor
+      local aa = reaper.CreateTakeAudioAccessor(take)
+      -- Get the start time of the audio that can be returned from this accessor
+        local aa_start = reaper.GetAudioAccessorStartTime(aa)
+        -- Get the end time of the audio that can be returned from this accessor
+        local aa_end = reaper.GetAudioAccessorEndTime(aa)
+        local take_source_len, length_is_QN = reaper.GetMediaSourceLength(take_pcm_source)
+        -- Get the number of channels in the source media.
+         local take_source_num_channels = reaper.GetMediaSourceNumChannels(take_pcm_source)
+         msg(take_source_num_channels)
+    end
+        
+        
+      
+       
+    
 
     -- GET INFOS
     -- value_get = reaper.GetMediaItemInfo_Value(item, "D_VOL") -- Get the value of a the parameter
@@ -84,6 +123,10 @@ debug = 1
     
     -- SET INFOS
     -- reaper.SetMediaItemInfo_Value(item, "D_VOL", value_set) -- Set the value to the parameter
+    
+   
+    
+    
   end -- ENDLOOP through selected items
   
 
