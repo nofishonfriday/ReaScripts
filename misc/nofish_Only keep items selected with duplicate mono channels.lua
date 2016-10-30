@@ -15,6 +15,21 @@ function msg(m)
   end
 end
 
+selItemsTable = {} -- init empty table
+tablePos = 1
+
+
+-- set item selection from selItemsTable
+function RestoreSelectedItems (table)
+  reaper.Main_OnCommand(40289, 0) -- unsel all items
+  for _, item in ipairs(table) do
+    reaper.SetMediaItemSelected(item, true)
+  end
+end
+
+
+
+
 
 function main()
 debug = 1
@@ -29,6 +44,7 @@ debug = 1
   for i = 0, selected_items_count-1  do
     -- GET ITEMS
     item = reaper.GetSelectedMediaItem(0, i) -- Get selected item i
+    itemIsStereo = false
         
     --[[
     Audio accessor rescript example:
@@ -42,6 +58,11 @@ debug = 1
     --]]
        
     if item then
+      
+      -- comment for prod
+      local progressDisplay = "processing item " .. (i+1)
+      msg(progressDisplay)
+      
       local item_pos = reaper.GetMediaItemInfo_Value(item, "D_POSITION")
       local take = reaper.GetActiveTake(item) -- Get the active take   
       -- Get media source of media item take       
@@ -136,25 +157,29 @@ debug = 1
                   --]]
                 
                   -- reaper.SetMediaItemInfo_Value(item, "B_UISEL", 0)
+                  itemIsStereo = true
+                  break
                   end 
                  sample_count = sample_count + 1
                end
                block = block + 1
                offs = offs + samples_per_channel / take_source_sample_rate -- new offset in take source (seconds)
-             end -- loop through samples
+             end -- loop through samples 
+             if (itemIsStereo == false) then -- 2-channel item is double-mono
+              selItemsTable[tablePos] = item -- store this item in item selection table for later
+              tablePos = tablePos+1
+            end
              reaper.DestroyAudioAccessor(aa)
-      --[[
-      else -- item doesn't contain 2 channels, unselect it
-        reaper.SetMediaItemInfo_Value(item, "B_UISEL", 0)
-      --]]
       end -- if (take_source_num_channels == 2)
       -- msg("next item")
     end -- if item then
   end -- ENDLOOP through selected items
-  reaper.Undo_EndBlock("My action", -1) -- End of the undo block. Leave it at the bottom of your main function.
+  reaper.Undo_EndBlock("nofish_Only keep items selected with duplicate mono channels", -1) -- End of the undo block. Leave it at the bottom of your main function.
 end -- main()
 
 
 main()
+
+RestoreSelectedItems(selItemsTable)
 reaper.UpdateArrange() -- Update the arrangement (often needed)
 -- reaper.ShowMessageBox("Script executed in (s): "..tostring(reaper.time_precise() - time_os), "", 0)
