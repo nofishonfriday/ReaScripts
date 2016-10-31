@@ -1,4 +1,4 @@
-## Currently available scripts (Nov. 21 2015) ##
+## Currently available scripts (Oct. 31 2015) ##
 
 **MIDI**   
 
@@ -13,6 +13,9 @@ http://forum.cockos.com/showpost.php?p=1589221&postcount=4
 
 
 **misc**
+
+Only keep items selected with duplicate mono channels.lua (test-version)
+http://forum.cockos.com/showthread.php?t=183153
 
 Dynamic mixer.lua   
 http://forum.cockos.com/showthread.php?t=166554
