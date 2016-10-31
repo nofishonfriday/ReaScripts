@@ -155,8 +155,10 @@ debug = 1
 		 end
 		 -- msg(aa_ret)
 		 
-		 samples_sum_L = 0;
-		 samples_sum_R = 0;
+		 samples_sum_L = 0
+		 samples_sum_R = 0
+		 -- Ixix method
+		 difference = 0
 		 
 		 --[[
 		 loop through cur. buffer
@@ -191,6 +193,9 @@ debug = 1
 		   -- local cur_val_right = math.abs( (buffer[buf_pos_right]) )
 		   samples_sum_R = samples_sum_R + cur_val_right
 		   
+		   -- Ixix
+		   difference = difference + (cur_val_left - cur_val_right)
+		   
 		    -- uncomment here if want to see sample analysis (warning: huge data output)
 		    --[[
 		    msg("is stereo: ")
@@ -217,7 +222,8 @@ debug = 1
 		 -- msg(LR_diff)
 		 -- msg("\n")
 		 
-		 if (LR_diff > detection_threshold_lin) then
+		 -- if (LR_diff > detection_threshold_lin) then
+		 if (difference > detection_threshold_lin) then
 		  itemIsStereo = true
 		  break
 		 end
