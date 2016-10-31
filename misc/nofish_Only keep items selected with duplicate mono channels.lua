@@ -1,7 +1,23 @@
 --[[
-nofish_Only keep items selected with duplicate mono channels.lua
-v0.9
+ * ReaScript Name: nofish_Only keep items selected with duplicate mono channels.lua
+ * Version: 0.9
+ * Author: nofish
+ * About:
+ *   checks if stereo items contain identical l / r
+	see http://forum.cockos.com/showthread.php?t=183153
+--]]
 
+--[[
+ Changelog:
+ * v0.9
+    + beta test version
+--]]
+
+
+
+
+
+--[[
 works on selected stereo (2-channel) items (selected 1- or more than 2-channels items are ignored in the test)
 checks against user-setable threshold if left and right channel are identical (= double-mono items)
 and if so it keeps only these items selected
