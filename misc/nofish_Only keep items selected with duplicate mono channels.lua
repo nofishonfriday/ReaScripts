@@ -34,7 +34,7 @@ https://github.com/X-Raym/REAPER-ReaScripts/blob/master/Functions/spk77_Get%20ma
 -- *** user area *** ---
 
 -- differences in sample values below this threshold will be ignored
-detection_threshold = -20
+detection_threshold = -60
 
 -- *** end of user area *** ---
 
@@ -185,16 +185,16 @@ debug = 1
 		   local buf_pos_left = i -- left channel
 		   local cur_val_left = (buffer[buf_pos_left])
 		   -- local cur_val_left = math.abs( (buffer[buf_pos_left]) )
-		   samples_sum_L = samples_sum_L + cur_val_left
+		   -- samples_sum_L = samples_sum_L + cur_val_left
 		  
 		   
 		   local buf_pos_right = i+1 -- right channel, interleaved
 		   local cur_val_right = (buffer[buf_pos_right])
 		   -- local cur_val_right = math.abs( (buffer[buf_pos_right]) )
-		   samples_sum_R = samples_sum_R + cur_val_right
+		   -- samples_sum_R = samples_sum_R + cur_val_right
 		   
 		   -- Ixix
-		   difference = difference + (cur_val_left - cur_val_right)
+		   difference = difference + ((cur_val_left - cur_val_right)*0.5)
 		   
 		    -- uncomment here if want to see sample analysis (warning: huge data output)
 		    --[[
@@ -213,12 +213,13 @@ debug = 1
 		 -- msg(samples_sum_R)
 		 -- msg(block)
 		 -- reaper.ShowConsoleMsg(".") -- progress display
-		 
-		 local LR_diff = abs(samples_sum_L - samples_sum_R)
+		
 		 -- local LR_diff = (samples_sum_L - samples_sum_R)
+		 -- local LR_diff = abs(samples_sum_L - samples_sum_R)
 		
 		 
-		 -- msg(detection_threshold_lin)               
+		 -- msg(detection_threshold_lin) 
+		 -- msg(difference)              
 		 -- msg(LR_diff)
 		 -- msg("\n")
 		 
