@@ -1,6 +1,6 @@
 --[[
  * ReaScript Name: nofish_Only keep items selected with duplicate mono channels.lua
- * Version: 0.9
+ * Version: 0.91
  * Author: nofish
  * About:
  *   checks if stereo items contain identical l / r
@@ -10,7 +10,10 @@
 --[[
  Changelog:
  * v0.9
-    + beta test version
+   initial release (beta test version)
+ * v0.91
+   # faster calculation method (thanks Ixix)
+   # added 0.5 gain factor
 --]]
 
 
