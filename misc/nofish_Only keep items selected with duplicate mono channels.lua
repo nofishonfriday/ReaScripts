@@ -34,7 +34,7 @@ https://github.com/X-Raym/REAPER-ReaScripts/blob/master/Functions/spk77_Get%20ma
 -- *** user area *** ---
 
 -- differences in sample values below this threshold will be ignored
-detection_threshold = -60
+detection_threshold = -20
 
 -- *** end of user area *** ---
 
