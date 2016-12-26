@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" commit="6615f78272f76e52967fb56b93933bfdf4a52b72" name="nofish ReaScripts">
+<index version="1" commit="bb0636b01cd7dff4a2bc860b0459516ae1d3fb68" name="nofish ReaScripts">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script">
       <version name="1.0" author="nofish" time="2016-12-26T17:20:10Z">
@@ -11,8 +11,7 @@
   <category name="MIDI">
     <reapack name="nofish_Turn toolbar btn on when take pooled.eel" type="script">
       <version name="1.0" author="nofish" time="2016-12-26T17:20:10Z">
-        <changelog><![CDATA[+ Initial release]]></changelog>
-        <source main="true">https://github.com/nofishonfriday/ReaScripts/raw/c2f497bd9eee531f3dd4dafd88189e35dd86ff16/MIDI/nofish_Turn%20toolbar%20btn%20on%20when%20take%20pooled.eel</source>
+        <source main="true">https://github.com/nofishonfriday/ReaScripts/raw/bb0636b01cd7dff4a2bc860b0459516ae1d3fb68/MIDI/nofish_Turn%20toolbar%20btn%20on%20when%20take%20pooled.eel</source>
       </version>
     </reapack>
   </category>
@@ -62,7 +61,7 @@
     </reapack>
     <reapack name="nofish_Write tracknames to textfile.eel" type="script">
       <version name="1.0" time="2016-12-26T17:49:14Z">
-        <source main="true">https://github.com/nofishonfriday/ReaScripts/raw/1ae1f57f8011834f1a892474135c68a518a18f2a/misc/nofish_Write%20tracknames%20to%20textfile.eel</source>
+        <source main="true">https://github.com/nofishonfriday/ReaScripts/raw/bb0636b01cd7dff4a2bc860b0459516ae1d3fb68/misc/nofish_Write%20tracknames%20to%20textfile.eel</source>
       </version>
     </reapack>
   </category>
