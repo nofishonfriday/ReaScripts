@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" commit="c2f497bd9eee531f3dd4dafd88189e35dd86ff16">
+<index version="1" commit="06128f64548fe41e896e54720e17bb9421d4d609" name="nofish ReaScripts">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script">
       <version name="1.0" author="nofish" time="2016-12-26T17:20:10Z">
@@ -28,6 +28,37 @@
       <version name="1.0" author="nofish" time="2016-12-26T17:20:10Z">
         <changelog><![CDATA[+ Initial release]]></changelog>
         <source main="true">https://github.com/nofishonfriday/ReaScripts/raw/c2f497bd9eee531f3dd4dafd88189e35dd86ff16/misc/nofish_List%20tracknames%20in%20console.lua</source>
+      </version>
+    </reapack>
+    <reapack name="nofish_Realtime clock.lua" type="script">
+      <version name="1.0" author="nofish" time="2016-12-26T17:49:14Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="true">https://github.com/nofishonfriday/ReaScripts/raw/1ae1f57f8011834f1a892474135c68a518a18f2a/misc/nofish_Realtime%20clock.lua</source>
+      </version>
+    </reapack>
+    <reapack name="nofish_Save track FX chains (for sel tracks).lua" type="script">
+      <version name="1.0" author="nofish" time="2016-12-26T17:49:14Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="true">https://github.com/nofishonfriday/ReaScripts/raw/1ae1f57f8011834f1a892474135c68a518a18f2a/misc/nofish_Save%20track%20FX%20chains%20(for%20sel%20tracks).lua</source>
+      </version>
+    </reapack>
+    <reapack name="nofish_Write tracknames to textfile.eel" type="script">
+      <version name="1.0" time="2016-12-26T17:49:14Z">
+        <source main="true">https://github.com/nofishonfriday/ReaScripts/raw/1ae1f57f8011834f1a892474135c68a518a18f2a/misc/nofish_Write%20tracknames%20to%20textfile.eel</source>
+      </version>
+    </reapack>
+  </category>
+  <category name="Test Area - not ready for prime time -">
+    <reapack name="nofish_Solo (exclusive) last focused FX - (w_undo point).lua" type="script">
+      <version name="1.0" author="nofish" time="2016-12-26T17:56:12Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/nofishonfriday/ReaScripts/raw/06128f64548fe41e896e54720e17bb9421d4d609/Test%20Area%20-%20not%20ready%20for%20prime%20time%20-/nofish_Solo%20(exclusive)%20last%20focused%20FX%20-%20(w_undo%20point).lua</source>
+      </version>
+    </reapack>
+    <reapack name="nofish_Solo (exclusive) last focused FX.lua" type="script">
+      <version name="1.0" author="nofish" time="2016-12-26T17:56:12Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/nofishonfriday/ReaScripts/raw/06128f64548fe41e896e54720e17bb9421d4d609/Test%20Area%20-%20not%20ready%20for%20prime%20time%20-/nofish_Solo%20(exclusive)%20last%20focused%20FX.lua</source>
       </version>
     </reapack>
   </category>
