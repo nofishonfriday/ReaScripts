@@ -1,3 +1,9 @@
+/**
+	* About: http://forum.cockos.com/showthread.php?t=169099
+	* Version: 1.0
+**/
+
+
 // nofish_Write tracknames to textfile.eel v1.2
 // writes a textfile 'Tracknames.txt' to project directory (\'media subfolder' if set in Project settings, '\REAPER Media' if project is not saved)
 // see http://forum.cockos.com/showthread.php?t=169099

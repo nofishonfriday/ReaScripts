@@ -1,4 +1,18 @@
-    --[[
+--[[
+ * Version: 1.0
+ * Author: nofish
+ * About: a mod from 'mpl_Save_all_track_FX_chains.lua' found here:
+ * http://forum.cockos.com/showpost.php?p=1596059&postcount=26
+--]]
+
+--[[
+ Changelog:
+ * v1.0
+    + Initial release
+--]]   
+
+
+   --[[
     nofish_Save_track_FX-chains_for_sel_tracks.lua
     v1.0
     

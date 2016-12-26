@@ -1,3 +1,16 @@
+--[[
+ * Version: 1.0
+ * Author: nofish
+ * About: http://forum.cockos.com/showthread.php?t=166554
+--]]
+
+--[[
+ Changelog:
+ * v1.0
+    + Initial release
+--]]
+
+
 -- Dynamic Mixer --
 -- see http://forum.cockos.com/showthread.php?t=166554
 
