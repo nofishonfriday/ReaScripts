@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" commit="43ee5b3e915ad7137b45dc027a951ba10ed473d0" name="nofish ReaScripts">
+<index version="1" commit="c4be321e5d494b139cb40f78922d709fb6c937ba" name="nofish ReaScripts">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script">
       <version name="1.0" author="nofish" time="2016-12-26T17:20:10Z">
@@ -32,7 +32,7 @@
     <reapack name="nofish_Realtime clock.lua" type="script">
       <version name="1.0" author="nofish" time="2016-12-26T17:49:14Z">
         <changelog><![CDATA[+ Initial release]]></changelog>
-        <source main="true">https://github.com/nofishonfriday/ReaScripts/raw/43ee5b3e915ad7137b45dc027a951ba10ed473d0/misc/nofish_Realtime%20clock.lua</source>
+        <source main="true">https://github.com/nofishonfriday/ReaScripts/raw/c4be321e5d494b139cb40f78922d709fb6c937ba/misc/nofish_Realtime%20clock.lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Save track FX chains (for sel tracks).lua" type="script">
