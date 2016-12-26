@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" commit="c4be321e5d494b139cb40f78922d709fb6c937ba" name="nofish ReaScripts">
+<index version="1" commit="80ce0dd8b9c29462d2d0f60eec3f9f4702460fdb" name="nofish ReaScripts">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script">
       <version name="1.0" author="nofish" time="2016-12-26T17:20:10Z">
@@ -32,7 +32,7 @@
     <reapack name="nofish_Realtime clock.lua" type="script">
       <version name="1.0" author="nofish" time="2016-12-26T17:49:14Z">
         <changelog><![CDATA[+ Initial release]]></changelog>
-        <source main="true">https://github.com/nofishonfriday/ReaScripts/raw/c4be321e5d494b139cb40f78922d709fb6c937ba/misc/nofish_Realtime%20clock.lua</source>
+        <source main="true">https://github.com/nofishonfriday/ReaScripts/raw/79a79ca7cc5fd9310f645c8c1427221d419a227d/misc/nofish_Realtime%20clock.lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Save track FX chains (for sel tracks).lua" type="script">
@@ -60,8 +60,8 @@
       </version>
     </reapack>
     <reapack name="nofish_Write tracknames to textfile.eel" type="script">
-      <version name="1.0" time="2016-12-26T17:49:14Z">
-        <source main="true">https://github.com/nofishonfriday/ReaScripts/raw/bb0636b01cd7dff4a2bc860b0459516ae1d3fb68/misc/nofish_Write%20tracknames%20to%20textfile.eel</source>
+      <version name="1.0" time="2016-12-26T17:49:14Z" author="nofish">
+        <source main="true">https://github.com/nofishonfriday/ReaScripts/raw/80ce0dd8b9c29462d2d0f60eec3f9f4702460fdb/misc/nofish_Write%20tracknames%20to%20textfile.eel</source>
       </version>
     </reapack>
   </category>
