@@ -1,3 +1,21 @@
+--[[
+ 
+ * Version: 1.0
+ * Author: nofish
+ * About:
+ *   see http://forum.cockos.com/showpost.php?p=1596059&postcount=26
+--]]
+
+--[[
+ Changelog:
+ * v1.0
+    + Initial release
+--]]
+
+
+
+
+
     --[[
     nofish_Save_track_FX-chains_for_sel_tracks.lua
     v1.0

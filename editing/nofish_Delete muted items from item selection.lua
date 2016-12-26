@@ -1,5 +1,18 @@
--- Delete muted items from item selection v1.0
--- see http://forum.cockos.com/showpost.php?p=1589221&postcount=4
+--[[
+ * ReaScript Name: nofish_Realtime clock
+ * Version: 1.0
+ * Author: nofish
+ * About:
+ *   displays a small clock window
+ *   see http://forum.cockos.com/showpost.php?p=1589221&postcount=4
+--]]
+
+--[[
+ Changelog:
+ * v1.0
+    + Initial release
+--]]
+
 
 -- for debugging
 function msg(m)

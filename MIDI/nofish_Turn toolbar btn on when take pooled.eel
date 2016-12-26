@@ -1,5 +1,18 @@
-// Turn toolbar button on when take is pooled v1.0
-// see http://forum.cockos.com/showthread.php?t=163359
+--[[
+ * ReaScript Name: nofish_Realtime clock
+ * Version: 1.0
+ * Author: nofish
+ * About:
+ *   displays a small clock window
+ *   see http://forum.cockos.com/showthread.php?t=163359
+--]]
+
+--[[
+ Changelog:
+ * v1.0
+    + Initial release
+--]]
+
 //
 // to do: 
 // - might use a cooldown function to not waste CPU cycles

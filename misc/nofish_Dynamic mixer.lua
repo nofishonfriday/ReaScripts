@@ -1,3 +1,44 @@
+--[[
+ * ReaScript Name: Dynamic mixer
+ * Description: 
+ * Screenshot: 
+ * Author: nofish
+ * Author URI: http://forum.cockos.com/member.php?u=6870
+ * Repository:
+ * Repository URI: https://github.com/nofishonfriday/ReaScripts
+ * File URI: 
+ * Licence: GPL v3
+ * Forum Thread: Solo for every plugin
+ * Forum Thread URI: http://forum.cockos.com/showthread.php?t=166554
+ * REAPER: 5.0
+ * Extensions: None
+ * Version: 1.0
+--]]
+
+--[[
+ * Changelog:
+  
+ * v1.0 - September 16 2015
+  + initial Lua release by spk77
+
+  * v1.01 - Spetember 29 2015
+    nofish:
+    + muted tracks and muted items detection
+    + record armed tracks detection
+    + make track always visible (even if muted) and show parents if trackname has #AV suffix
+    + automatically show receiving tracks and their parents
+
+  * v1.02 - September 30 2015
+    nofish:
+    + script can be assigned to a toolbar button (lights when active), press again to exit
+    + MCP track view is restored on exit (thanks spk77)
+--]]
+
+
+
+
+
+
 -- Dynamic Mixer --
 -- see http://forum.cockos.com/showthread.php?t=166554
 
@@ -5,20 +46,7 @@
 
 Changelog
 
-v1.0 - September 16 2015
-initial Lua release by spk77
 
-v1.01 - Spetember 29 2015
-nofish:
-+ muted tracks and muted items detection
-+ record armed tracks detection
-+ make track always visible (even if muted) and show parents if trackname has #AV suffix
-+ automatically show receiving tracks and their parents
-
-v1.02 - September 30 2015
-nofish:
-+ script can be assigned to a toolbar button (lights when active), press again to exit
-+ MCP track view is restored on exit (thanks spk77)
 
 --]]
 
