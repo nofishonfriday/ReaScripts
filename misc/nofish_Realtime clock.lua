@@ -3,7 +3,7 @@
  * Version: 1.0
  * Author: nofish
  * About:
- *   http://forum.cockos.com/showthread.php?t=165884
+ *   see http://forum.cockos.com/showthread.php?t=165884
 --]]
 
 --[[
