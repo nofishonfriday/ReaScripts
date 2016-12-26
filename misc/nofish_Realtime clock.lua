@@ -2,8 +2,9 @@
  * ReaScript Name: nofish_Realtime clock
  * Version: 1.0
  * Author: nofish
- * About:
- *   see http://forum.cockos.com/showthread.php?t=165884
+  * About:
+ *   displays a small clock window
+     see http://forum.cockos.com/showthread.php?t=165884
 --]]
 
 --[[
