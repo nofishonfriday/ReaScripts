@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<index version="1" name="nofish ReaScripts" commit="1abfcb23d0804d550fd36b49dd793c38515a6fa4">
+  <category name="playing garden">
+    <reapack name="nofish_Solo (exclusive) last focused FX - (w_undo point).lua" type="script">
+      <version name="1.0" author="nofish" time="2016-12-26T16:57:07Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/nofishonfriday/ReaScripts/raw/3a81c64d7a393ce7ce428a0711fe549f881016e6/playing%20garden/nofish_Solo%20(exclusive)%20last%20focused%20FX%20-%20(w_undo%20point).lua</source>
+      </version>
+    </reapack>
+    <reapack name="nofish_Solo (exclusive) last focused FX.lua" type="script">
+      <version name="1.0" author="nofish" time="2016-12-26T16:57:07Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="true">https://github.com/nofishonfriday/ReaScripts/raw/3a81c64d7a393ce7ce428a0711fe549f881016e6/playing%20garden/nofish_Solo%20(exclusive)%20last%20focused%20FX.lua</source>
+      </version>
+    </reapack>
+  </category>
+</index>
