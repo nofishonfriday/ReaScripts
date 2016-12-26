@@ -10,7 +10,8 @@
  * File URI: 
  * Licence: GPL v3
  * Forum Thread: Solo for every plugin
- * Forum Thread URI: forum.cockos.com/showpost.php?p=1758750&postcount=3
+ * About: 
+ * forum.cockos.com/showpost.php?p=1758750&postcount=3
  * REAPER: 5.0
  * Extensions: None
  * Version: 1.0
