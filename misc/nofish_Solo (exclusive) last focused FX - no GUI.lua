@@ -1,20 +1,10 @@
 --[[
- * ReaScript Name: Solo (exclusive) last focused FX
- * Description: solos the track which contains the last focused FX
- * Instructions: Run (bind to toolbar/shortcut).
- * Screenshot: http://i.imgur.com/RgUGGNg.gif
- * Author: nofish
- * Author URI: http://forum.cockos.com/member.php?u=6870
- * Repository:
- * Repository URI: https://github.com/nofishonfriday/ReaScripts
- * File URI: 
- * Licence: GPL v3
- * Forum Thread: Solo for every plugin
- * Forum Thread URI: http://forum.cockos.com/showpost.php?p=1759098&postcount=8
- * REAPER: 5.0
- * Extensions: None
  * Version: 1.0
+ * Author: nofish
+ * About:
+ *  http://forum.cockos.com/showpost.php?p=1759098&postcount=8
 --]]
+
 
 --[[
  * Changelog:
