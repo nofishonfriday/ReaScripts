@@ -1,18 +1,9 @@
 --[[
- * ReaScript Name: Dynamic mixer
- * Description: 
- * Screenshot: 
+ * Version: 1.02
  * Author: nofish
- * Author URI: http://forum.cockos.com/member.php?u=6870
- * Repository:
- * Repository URI: https://github.com/nofishonfriday/ReaScripts
- * File URI: 
- * Licence: GPL v3
- * Forum Thread: Solo for every plugin
- * Forum Thread URI: http://forum.cockos.com/showthread.php?t=166554
- * REAPER: 5.0
- * Extensions: None
- * Version: 1.0
+ * About:
+ *  for use with toolbar button
+ *  see http://forum.cockos.com/showthread.php?t=166554
 --]]
 
 --[[

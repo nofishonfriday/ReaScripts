@@ -1,33 +1,165 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" commit="c2f497bd9eee531f3dd4dafd88189e35dd86ff16">
+<index version="1" name="nofish ReaScripts" commit="70a7911133b7cb51182a2fb8336c624b8ed15e1e">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 see http://forum.cockos.com/showpost.php?p=1589221&postcount=4\par}
+}
+]]></description>
+      </metadata>
       <version name="1.0" author="nofish" time="2016-12-26T17:20:10Z">
         <changelog><![CDATA[+ Initial release]]></changelog>
-        <source main="true">https://github.com/nofishonfriday/ReaScripts/raw/c2f497bd9eee531f3dd4dafd88189e35dd86ff16/editing/nofish_Delete%20muted%20items%20from%20item%20selection.lua</source>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/0ce6f4d99770cb1f5b140c6e687f790f9b517b94/editing/nofish_Delete%20muted%20items%20from%20item%20selection.lua</source>
       </version>
     </reapack>
   </category>
   <category name="MIDI">
     <reapack name="nofish_Turn toolbar btn on when take pooled.eel" type="script">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 http://forum.cockos.com/showthread.php?t=163359\par}
+}
+]]></description>
+      </metadata>
       <version name="1.0" author="nofish" time="2016-12-26T17:20:10Z">
         <changelog><![CDATA[+ Initial release]]></changelog>
-        <source main="true">https://github.com/nofishonfriday/ReaScripts/raw/c2f497bd9eee531f3dd4dafd88189e35dd86ff16/MIDI/nofish_Turn%20toolbar%20btn%20on%20when%20take%20pooled.eel</source>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/c2f497bd9eee531f3dd4dafd88189e35dd86ff16/MIDI/nofish_Turn%20toolbar%20btn%20on%20when%20take%20pooled.eel</source>
       </version>
     </reapack>
   </category>
   <category name="misc">
     <reapack name="nofish_Dynamic mixer.lua" type="script">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 for use with toolbar button see http://forum.cockos.com/showthread.php?t=166554\par}
+}
+]]></description>
+      </metadata>
       <version name="1.0" author="nofish" time="2016-12-26T17:20:10Z">
         <changelog><![CDATA[+ initial Lua release by spk77
 ]]></changelog>
-        <source main="true">https://github.com/nofishonfriday/ReaScripts/raw/c2f497bd9eee531f3dd4dafd88189e35dd86ff16/misc/nofish_Dynamic%20mixer.lua</source>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/c2f497bd9eee531f3dd4dafd88189e35dd86ff16/misc/nofish_Dynamic%20mixer.lua</source>
+      </version>
+      <version name="1.02" author="nofish" time="2016-12-27T02:02:52Z">
+        <changelog><![CDATA[nofish:
++ script can be assigned to a toolbar button (lights when active), press again to exit
++ MCP track view is restored on exit (thanks spk77)]]></changelog>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/70a7911133b7cb51182a2fb8336c624b8ed15e1e/misc/nofish_Dynamic%20mixer.lua</source>
       </version>
     </reapack>
     <reapack name="nofish_List tracknames in console.lua" type="script">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 http://forum.cockos.com/showpost.php?p=1597751&postcount=6\par}
+}
+]]></description>
+      </metadata>
       <version name="1.0" author="nofish" time="2016-12-26T17:20:10Z">
         <changelog><![CDATA[+ Initial release]]></changelog>
-        <source main="true">https://github.com/nofishonfriday/ReaScripts/raw/c2f497bd9eee531f3dd4dafd88189e35dd86ff16/misc/nofish_List%20tracknames%20in%20console.lua</source>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/c2f497bd9eee531f3dd4dafd88189e35dd86ff16/misc/nofish_List%20tracknames%20in%20console.lua</source>
+      </version>
+    </reapack>
+    <reapack name="nofish_Realtime clock.lua" type="script" desc="nofish_Realtime clock">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 displays a small clock window see http://forum.cockos.com/showthread.php?t=165884\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="nofish" time="2016-12-26T17:49:14Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/1ae1f57f8011834f1a892474135c68a518a18f2a/misc/nofish_Realtime%20clock.lua</source>
+      </version>
+    </reapack>
+    <reapack name="nofish_Save track FX chains (for sel tracks).lua" type="script">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 see http://forum.cockos.com/showpost.php?p=1596059&postcount=26\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="nofish" time="2016-12-26T17:49:14Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/1ae1f57f8011834f1a892474135c68a518a18f2a/misc/nofish_Save%20track%20FX%20chains%20(for%20sel%20tracks).lua</source>
+      </version>
+    </reapack>
+    <reapack name="nofish_Solo (exclusive) last focused FX - GUI.lua" type="script">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 http://forum.cockos.com/showpost.php?p=1758750&postcount=3\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="nofish" time="2016-12-26T18:03:58Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/6615f78272f76e52967fb56b93933bfdf4a52b72/misc/nofish_Solo%20(exclusive)%20last%20focused%20FX%20-%20GUI.lua</source>
+      </version>
+    </reapack>
+    <reapack name="nofish_Solo (exclusive) last focused FX - no GUI (w_undo point).lua" type="script">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 http://forum.cockos.com/showpost.php?p=1759449&postcount=11\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="nofish" time="2016-12-26T18:03:58Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/6615f78272f76e52967fb56b93933bfdf4a52b72/misc/nofish_Solo%20(exclusive)%20last%20focused%20FX%20-%20no%20GUI%20(w_undo%20point).lua</source>
+      </version>
+    </reapack>
+    <reapack name="nofish_Solo (exclusive) last focused FX - no GUI.lua" type="script">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 http://forum.cockos.com/showpost.php?p=1759098&postcount=8\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="nofish" time="2016-12-26T18:03:58Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/6615f78272f76e52967fb56b93933bfdf4a52b72/misc/nofish_Solo%20(exclusive)%20last%20focused%20FX%20-%20no%20GUI.lua</source>
+      </version>
+    </reapack>
+    <reapack name="nofish_Write tracknames to textfile.eel" type="script">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 http://forum.cockos.com/showthread.php?t=169099\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" time="2016-12-26T17:49:14Z" author="nofish">
+        <changelog><![CDATA[+ 1.0 Initial release]]></changelog>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/70a7911133b7cb51182a2fb8336c624b8ed15e1e/misc/nofish_Write%20tracknames%20to%20textfile.eel</source>
       </version>
     </reapack>
   </category>

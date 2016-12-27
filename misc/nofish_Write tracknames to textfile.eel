@@ -1,6 +1,9 @@
-/**
-	* About: http://forum.cockos.com/showthread.php?t=169099
-**/
+-- @version 1.0
+-- @author nofish
+-- @about
+--   http://forum.cockos.com/showthread.php?t=169099
+-- @changelog
+--   + 1.0 Initial release
 
 
 
