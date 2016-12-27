@@ -2,7 +2,8 @@
  * Version: 1.02
  * Author: nofish
  * About:
- * see http://forum.cockos.com/showthread.php?t=166554
+ *  for use with toolbar button
+ *  see http://forum.cockos.com/showthread.php?t=166554
 --]]
 
 --[[
