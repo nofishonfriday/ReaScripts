@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="0ce6f4d99770cb1f5b140c6e687f790f9b517b94">
+<index version="1" name="nofish ReaScripts" commit="70a7911133b7cb51182a2fb8336c624b8ed15e1e">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script">
       <metadata>
@@ -36,6 +36,15 @@
   </category>
   <category name="misc">
     <reapack name="nofish_Dynamic mixer.lua" type="script">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 for use with toolbar button see http://forum.cockos.com/showthread.php?t=166554\par}
+}
+]]></description>
+      </metadata>
       <version name="1.0" author="nofish" time="2016-12-26T17:20:10Z">
         <changelog><![CDATA[+ initial Lua release by spk77
 ]]></changelog>
@@ -45,7 +54,7 @@
         <changelog><![CDATA[nofish:
 + script can be assigned to a toolbar button (lights when active), press again to exit
 + MCP track view is restored on exit (thanks spk77)]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/5ec8124f165a60603a0390ef03a73dff63bcf5b4/misc/nofish_Dynamic%20mixer.lua</source>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/70a7911133b7cb51182a2fb8336c624b8ed15e1e/misc/nofish_Dynamic%20mixer.lua</source>
       </version>
     </reapack>
     <reapack name="nofish_List tracknames in console.lua" type="script">
@@ -144,14 +153,13 @@
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 \b \fs36 nofish_Write tracknames to textfile.eel\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 http://forum.cockos.com/showthread.php?t=169099\par}
 }
 ]]></description>
       </metadata>
       <version name="1.0" time="2016-12-26T17:49:14Z" author="nofish">
         <changelog><![CDATA[+ 1.0 Initial release]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/0ce6f4d99770cb1f5b140c6e687f790f9b517b94/misc/nofish_Write%20tracknames%20to%20textfile.eel</source>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/70a7911133b7cb51182a2fb8336c624b8ed15e1e/misc/nofish_Write%20tracknames%20to%20textfile.eel</source>
       </version>
     </reapack>
   </category>
