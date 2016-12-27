@@ -75,7 +75,7 @@
       </metadata>
       <version name="1.0" author="nofish" time="2016-12-26T17:49:14Z">
         <changelog><![CDATA[+ Initial release]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/0b995616409575ea1b18d804bdc1401d8274b663/misc/nofish_Realtime%20clock.lua</source>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/1ae1f57f8011834f1a892474135c68a518a18f2a/misc/nofish_Realtime%20clock.lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Save track FX chains (for sel tracks).lua" type="script">
@@ -105,7 +105,7 @@
       </metadata>
       <version name="1.0" author="nofish" time="2016-12-26T18:03:58Z">
         <changelog><![CDATA[+ Initial Release]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/e44a14fb4701d14a49b2b28c49d1f30cc5078167/misc/nofish_Solo%20(exclusive)%20last%20focused%20FX%20-%20GUI.lua</source>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/6615f78272f76e52967fb56b93933bfdf4a52b72/misc/nofish_Solo%20(exclusive)%20last%20focused%20FX%20-%20GUI.lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Solo (exclusive) last focused FX - no GUI (w_undo point).lua" type="script">
@@ -120,7 +120,7 @@
       </metadata>
       <version name="1.0" author="nofish" time="2016-12-26T18:03:58Z">
         <changelog><![CDATA[+ Initial Release]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/e44a14fb4701d14a49b2b28c49d1f30cc5078167/misc/nofish_Solo%20(exclusive)%20last%20focused%20FX%20-%20no%20GUI%20(w_undo%20point).lua</source>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/6615f78272f76e52967fb56b93933bfdf4a52b72/misc/nofish_Solo%20(exclusive)%20last%20focused%20FX%20-%20no%20GUI%20(w_undo%20point).lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Solo (exclusive) last focused FX - no GUI.lua" type="script">
@@ -135,7 +135,7 @@
       </metadata>
       <version name="1.0" author="nofish" time="2016-12-26T18:03:58Z">
         <changelog><![CDATA[+ Initial Release]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/e44a14fb4701d14a49b2b28c49d1f30cc5078167/misc/nofish_Solo%20(exclusive)%20last%20focused%20FX%20-%20no%20GUI.lua</source>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/6615f78272f76e52967fb56b93933bfdf4a52b72/misc/nofish_Solo%20(exclusive)%20last%20focused%20FX%20-%20no%20GUI.lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Write tracknames to textfile.eel" type="script">
