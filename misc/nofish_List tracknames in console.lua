@@ -1,5 +1,5 @@
 --[[
- * ReaScript Name: nofish_Light toolbar button when master over 0 db
+ * ReaScript Name: nofish_List tracknames in console
  * Version: 1.0
  * Author: nofish
  * About:
