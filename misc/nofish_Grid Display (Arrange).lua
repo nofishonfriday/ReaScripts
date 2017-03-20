@@ -105,27 +105,34 @@ function mainloop()
   
  
  
--- transform divisionIn to 1/1, 1/4 etc.
-den = 1 ctrNorm = -1 denNorm = -1 
+  -- transform divisionIn to 1/1, 1/4 etc.
+  denNorm = -1 
   
--- straight grid
-
-for x=1, 8, 1 do
-  -- msg(den)
-  if (1/den == divisionIn) then 
-    ctrNorm = 1 denNorm =  den
-    msg("fit !!!")
-    break
-  end 
-  -- msg(1/den)
-  -- msg(divisionIn)
-  den = den*2
-end
-
-   
+  -- straight grid
+  den = 1
+  for x=1, 8, 1 do
+    -- msg(den)
+    if (1/den == divisionIn) then -- straight grid
+      denNorm = den 
+      trpDot = ""
+      -- msg("fit !!!")
+      break
+    elseif ((1/den) * (2/3) == divisionIn) then -- triplet grid
+      denNorm = den 
+      trpDot = "T" 
+      break
+    end
+    -- msg(1/den)
+    -- msg(divisionIn)
+    den = den*2
+  end
+  
+ 
+ 
+  
   
   -- gfx.printf(num.."/"..den.." "..trpDot)
-  gfx.printf(ctrNorm.."/"..denNorm.." "..trpDot)
+  gfx.printf("1".."/"..denNorm.." "..trpDot)
   -- gfx.printf(divisionIn)
   
  
