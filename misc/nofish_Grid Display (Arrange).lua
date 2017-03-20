@@ -112,15 +112,20 @@ function mainloop()
   den = 1
   for x=1, 8, 1 do
     -- msg(den)
-    if (1/den == divisionIn) then -- straight grid
+    recDen = 1/den
+    if (recDen == divisionIn) then -- straight grid
       denNorm = den 
       trpDot = ""
       -- msg("fit !!!")
       break
-    elseif ((1/den) * (2/3) == divisionIn) then -- triplet grid
+    elseif (recDen * (2/3) == divisionIn) then -- triplet grid
       denNorm = den 
       trpDot = "T" 
       break
+    elseif (recDen * 1.5 == divisionIn) then -- dotted grid
+      denNorm = den 
+      trpDot = "D" 
+      break              
     end
     -- msg(1/den)
     -- msg(divisionIn)
