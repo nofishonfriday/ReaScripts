@@ -3,8 +3,8 @@
  * Version: 1.0
  * Author: nofish
  * About:
- * displays current arrange grid setting, including swing
- * see http://forum.cockos.com/showthread.php?t=189700
+ *  displays current arrange grid setting, including swing
+ *  see http://forum.cockos.com/showthread.php?t=189700
 --]]
 
 --[[
