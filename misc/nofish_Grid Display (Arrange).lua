@@ -3,8 +3,8 @@
  * Version: 1.0
  * Author: nofish
  * About:
- *  displays current arrange grid setting
- *  see 
+ * displays current arrange grid setting, including swing
+ * see http://forum.cockos.com/showthread.php?t=189700
 --]]
 
 --[[
@@ -19,7 +19,7 @@
 defer_cnt=0
 
 function cooldown()
-  if defer_cnt >= 30 then -- run mainloop() every ~900ms
+  if defer_cnt >= 10 then -- run mainloop() every ~900ms
     defer_cnt=0
     reaper.PreventUIRefresh(1)
     mainloop()
@@ -32,8 +32,6 @@ end
 
 
 
--- Empty GUI template
-
 -- [[ 
 -- for debugging
 function msg(m)
@@ -42,7 +40,7 @@ end
 -- ]]
 
 
-
+-- GUI template by spk77, thanks --
 ----------
 -- Init --
 ----------
@@ -63,7 +61,7 @@ function init()
   -- Initialize gfx window --
   ---------------------------
   
-  gfx.init("", 0, 30, gui.settings.docker_id)
+  gfx.init("Grid", 0, 30, gui.settings.docker_id)
   gfx.setfont(1,"Arial", gui.settings.font_size)
   gfx.clear = 3355443  -- matches with "FUSION: Pro&Clean Theme :: BETA 01" http://forum.cockos.com/showthread.php?t=155329
   -- (Double click in ReaScript IDE to open the link)
@@ -76,35 +74,30 @@ end
 -- Mainloop --
 --------------
 
--- integer retval, optional number divisionIn, optional number swingmodeIn, optional number swingamtIn = 
--- reaper.GetSetProjectGrid(ReaProject project, boolean set)
-
--- Get or set the arrange view grid division. 0.25=quarter note, 1.0/3.0=half note triplet, etc. 
--- swingmode can be 1 for swing enabled, swingamt is -1..1. Returns grid configuration flags
-
 function mainloop()
- 
-  -- gridSetting = reaper.GetSetProjectGrid(0, false)
-  -- notesNeedBig = ""
-  -- reaper.GetSetProjectNotes(0, false, notesNeedBig)
- 
+  
   --------------
   -- Draw GUI --
   --------------
   
-  gfx.x = 10
-  gfx.y = 10
+  gfx.x = 5
+  gfx.y = 8
   
-  -- uncomment this if you want hh:mm::ss
-  -- gfx.printf(("%02d:%02d:%02d"):format(time.hour, time.min, time.sec))
- 
-  -- gfx.printf(("%02d:%02d"):format(time.hour, time.min))
- 
-  retval, divisionIn, swingmodeIn, swingamtIn = reaper.GetSetProjectGrid(0, false)
+  
+  
+ -------------------
+  --- grid stuff ---
+  ------------------
+  
+  -- integer retval, optional number divisionIn, optional number swingmodeIn, optional number swingamtIn = 
+  -- reaper.GetSetProjectGrid(ReaProject project, boolean set)
+  
+  -- Get or set the arrange view grid division. 0.25=quarter note, 1.0/3.0=half note triplet, etc. 
+  -- swingmode can be 1 for swing enabled, swingamt is -1..1. Returns grid configuration flags
+  
+  notRelevant, divisionIn, swingmodeIn, swingamtIn = reaper.GetSetProjectGrid(0, false)
   trpDot = ""
   
- 
- 
   -- transform divisionIn to 1/1, 1/4 etc.
   denNorm = -1 
   
@@ -116,7 +109,6 @@ function mainloop()
     if (recDen == divisionIn) then -- straight grid
       denNorm = den 
       trpDot = ""
-      -- msg("fit !!!")
       break
     elseif (recDen * (2/3) == divisionIn) then -- triplet grid
       denNorm = den 
@@ -132,15 +124,16 @@ function mainloop()
     den = den*2
   end
   
- 
- 
+  -- swing grid
+  swingEnabled = ""
+  swingAmnt = ""
   
-  
-  -- gfx.printf(num.."/"..den.." "..trpDot)
-  gfx.printf("1".."/"..denNorm.." "..trpDot)
-  -- gfx.printf(divisionIn)
-  
- 
+  if (swingmodeIn == 1) then 
+    swingEnabled = "S"
+    swingAmnt = tostring(math.floor((swingamtIn*100) + 0.5)).."%%"
+  end
+    
+  gfx.printf("1".."/"..denNorm.." "..trpDot.." "..swingEnabled.." "..swingAmnt)
   gfx.update()
   -- if gfx.getchar() >= 0 then reaper.defer(mainloop) end
 end
