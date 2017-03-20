@@ -1,5 +1,5 @@
 --[[
- * ReaScript Name: nofish_Grid Display (Arrange)
+ * ReaScript Name: nofish_Grid division display (Arrange)
  * Version: 1.0
  * Author: nofish
  * About:
@@ -88,7 +88,7 @@ function mainloop()
  -------------------
   --- grid stuff ---
   ------------------
-  
+  -- API doc
   -- integer retval, optional number divisionIn, optional number swingmodeIn, optional number swingamtIn = 
   -- reaper.GetSetProjectGrid(ReaProject project, boolean set)
   
