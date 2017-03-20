@@ -19,7 +19,7 @@
 defer_cnt=0
 
 function cooldown()
-  if defer_cnt >= 10 then -- run mainloop() every ~900ms
+  if defer_cnt >= 10 then -- slow down the main loop a little for CPU saving
     defer_cnt=0
     reaper.PreventUIRefresh(1)
     mainloop()
