@@ -71,6 +71,10 @@
         <changelog><![CDATA[+ Initial release]]></changelog>
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/fb96137e37f8146cabd8f8dce3285f882ca29121/misc/nofish_Grid%20division%20display%20(Arrange).lua</source>
       </version>
+      <version name="1.1" author="nofish" time="2017-03-21T04:02:12Z">
+        <changelog><![CDATA[# only calculate when grid changed (save CPU)]]></changelog>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/fe890d1aae7d8f03606be87a88c6d77d9fdc255a/misc/nofish_Grid%20division%20display%20(Arrange).lua</source>
+      </version>
     </reapack>
     <reapack name="nofish_List tracknames in console.lua" type="script" desc="nofish_List tracknames in console">
       <metadata>
