@@ -1,6 +1,6 @@
 --[[
  * ReaScript Name: nofish_Grid division display (Arrange)
- * Version: 1.0
+ * Version: 1.1
  * Author: nofish
  * About:
  *  displays current arrange grid setting, including swing
