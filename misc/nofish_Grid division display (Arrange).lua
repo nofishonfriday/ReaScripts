@@ -147,7 +147,7 @@ function mainloop()
   notRelevant, divisionIn, swingmodeIn, swingamtIn = reaper.GetSetProjectGrid(0, false)
   
   if (lastDivisionIn ~= divisionIn or lastSwingmodeIn ~= swingmodeIn or lastSwingamtIn ~= swingamtIn) then
-    msg("changed !!!")
+    -- msg("changed !!!")
     trpDot = ""
     
     -- transform divisionIn to 1/1, 1/4 etc.
