@@ -1,5 +1,5 @@
 --[[
- * ReaScript Name: nofish_Toggle "Ignore mousewheel on all faders".lua
+ * ReaScript Name: nofish_Toggle "Ignore mousewheel on all faders"
  * Version: 1.0
  * Author: nofish
  * About:

@@ -1,9 +1,10 @@
 --[[
- * ReaScript Name: nofish_Grid division display (Arrange)
+ * ReaScript Name: nofish_Grid division display (Arrange) -unfinished-
  * Version: 1.1
  * Author: nofish
  * About:
  *  displays current arrange grid setting, including swing
+ *  some things missing currently...
  *  see http://forum.cockos.com/showthread.php?t=189700
 --]]
 
