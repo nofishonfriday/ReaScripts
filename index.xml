@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="9af6371a25853a0201ea56643158c56d7375484a">
+<index version="1" name="nofish ReaScripts" commit="8dbbb46c7179a49deb5fb8fb530b527105dd63d1">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script">
       <metadata>
@@ -17,7 +17,24 @@
       </version>
     </reapack>
   </category>
-  <category name="MIDI">
+  <category name="MIDI Editor">
+    <reapack name="'Intelligent' toogle mute note(s) (under mouse).lua" type="script" desc="nofish_'Intelligent' toggle mute note(s) (under mouse)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Assign script to shortcut (MIDI editor section).\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab If notes selected: toggle mute state for selected notes\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab If no notes selected: toggle mute state for note under mouse (do nothing if mouse cursor isn't over note)\sa180\par}
+}
+]]></description>
+        <link rel="website">http://forum.cockos.com/showthread.php?t=192034</link>
+      </metadata>
+      <version name="1.0" author="nofish" time="2017-05-20T22:26:01Z">
+        <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/2243cb128c2cbe5af7d5d1953732632fd93cbb7f/MIDI%20Editor/'Intelligent'%20toogle%20mute%20note(s)%20(under%20mouse).lua</source>
+      </version>
+    </reapack>
     <reapack name="nofish_Turn toolbar btn on when take pooled.eel" type="script">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
@@ -28,9 +45,8 @@
 }
 ]]></description>
       </metadata>
-      <version name="1.0" author="nofish" time="2016-12-26T17:20:10Z">
-        <changelog><![CDATA[+ Initial release]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/c2f497bd9eee531f3dd4dafd88189e35dd86ff16/MIDI/nofish_Turn%20toolbar%20btn%20on%20when%20take%20pooled.eel</source>
+      <version name="1.0" author="nofish" time="2017-05-20T22:26:01Z">
+        <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/2243cb128c2cbe5af7d5d1953732632fd93cbb7f/MIDI%20Editor/nofish_Turn%20toolbar%20btn%20on%20when%20take%20pooled.eel</source>
       </version>
     </reapack>
   </category>
