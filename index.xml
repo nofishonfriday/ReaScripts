@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="8dbbb46c7179a49deb5fb8fb530b527105dd63d1">
+<index version="1" name="nofish ReaScripts" commit="861b5b2494b79ec1b17c41a6eec8467efeb8375e">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script">
       <metadata>
@@ -33,6 +33,9 @@
       </metadata>
       <version name="1.0" author="nofish" time="2017-05-20T22:26:01Z">
         <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/2243cb128c2cbe5af7d5d1953732632fd93cbb7f/MIDI%20Editor/'Intelligent'%20toogle%20mute%20note(s)%20(under%20mouse).lua</source>
+      </version>
+      <version name="1.0.0-1" author="nofish" time="2017-05-21T14:03:00Z">
+        <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/861b5b2494b79ec1b17c41a6eec8467efeb8375e/MIDI%20Editor/'Intelligent'%20toogle%20mute%20note(s)%20(under%20mouse).lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Turn toolbar btn on when take pooled.eel" type="script">
