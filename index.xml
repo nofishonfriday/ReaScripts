@@ -34,9 +34,6 @@
       <version name="1.0" author="nofish" time="2017-05-20T22:26:01Z">
         <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/2243cb128c2cbe5af7d5d1953732632fd93cbb7f/MIDI%20Editor/'Intelligent'%20toogle%20mute%20note(s)%20(under%20mouse).lua</source>
       </version>
-      <version name="1.0.0-1" author="nofish" time="2017-05-21T14:03:00Z">
-        <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/e147747d4e5693927c0c113fc8e399697075ecfa/MIDI%20Editor/'Intelligent'%20toogle%20mute%20note(s)%20(under%20mouse).lua</source>
-      </version>
       <version name="1.01" author="nofish" time="2017-05-21T14:50:26Z">
         <changelog><![CDATA[# fix: selected CC's get unintentionally muted, thanks FnA]]></changelog>
         <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/6f0f2309f416fa47313f79c330307c41207027a0/MIDI%20Editor/'Intelligent'%20toogle%20mute%20note(s)%20(under%20mouse).lua</source>
