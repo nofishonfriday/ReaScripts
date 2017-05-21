@@ -11,9 +11,9 @@
 
 --[[
  Changelog:
- * v1.0
+ * v1.0  May 20 2017
     + Initial release
- * v1.0.0-1
+ * v1.0.0-1  May 21 2017
     # fix: selected CC's get unintentionally muted, thanks FnA
 --]]
 
