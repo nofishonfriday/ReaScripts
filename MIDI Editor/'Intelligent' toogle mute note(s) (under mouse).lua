@@ -1,6 +1,6 @@
 --[[
  * ReaScript Name: nofish_'Intelligent' toggle mute note(s) (under mouse)
- * Version: 1.0.0-1
+ * Version: 1.01
  * Author: nofish
  * About:
  *  Assign script to shortcut (MIDI editor section).  
@@ -9,11 +9,14 @@
  * Link: http://forum.cockos.com/showthread.php?t=192034
 --]]
 
+
 --[[
  * Changelog:
+  
  * v1.0 - May 20 2017
-    + Initial release
- * v1.0.0-1  May 21 2017
+   + initial release
+
+  * v1.01 - May 21 2017
     # fix: selected CC's get unintentionally muted, thanks FnA
 --]]
 
