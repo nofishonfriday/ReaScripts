@@ -1,5 +1,5 @@
 --[[
- * ReaScript Name: nofish_Set all events of selected MIDI items to specific channel
+ * ReaScript Name: Set all events of selected MIDI items to specific channel
  * Version: 1.01
  * Author: juliansader, nofish
  * About:
