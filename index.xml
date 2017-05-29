@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="509d553b3d9feec9b2ecb97fdc0a865e4078f0f3">
+<index version="1" name="nofish ReaScripts" commit="7c1a1d1bb4ee06cf97239a940b7f3c455ca1b04f">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script">
       <metadata>
@@ -42,6 +42,23 @@
         <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/4cf21eec3fceece8f3f06c222c6c6f1fb0da2f76/MIDI%20Editor/'Intelligent'%20toogle%20mute%20note(s)%20(under%20mouse).lua</source>
       </version>
     </reapack>
+    <reapack name="js_nofish_Set all events of selected MIDI items to specific channel.lua" type="script" desc="Set all events of selected MIDI items to specific channel">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Changes the channel of all notes, CCs and notation events in all selected MIDI items to a specific channel\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab At least one MIDI take must be selected while the script is run to show a prompt to enter new channel for events\sa180\par}
+}
+]]></description>
+        <link rel="website">http://forum.cockos.com/showthread.php?t=192336</link>
+      </metadata>
+      <version name="1.01" author="juliansader, nofish" time="2017-05-29T18:23:15Z">
+        <changelog><![CDATA[+ nofish: added user prompt, check for required Reaper version]]></changelog>
+        <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/7c1a1d1bb4ee06cf97239a940b7f3c455ca1b04f/MIDI%20Editor/js_nofish_Set%20all%20events%20of%20selected%20MIDI%20items%20to%20specific%20channel.lua</source>
+      </version>
+    </reapack>
     <reapack name="nofish_Turn toolbar btn on when take pooled.eel" type="script">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
@@ -54,23 +71,6 @@
       </metadata>
       <version name="1.0" author="nofish" time="2017-05-20T22:26:01Z">
         <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/2243cb128c2cbe5af7d5d1953732632fd93cbb7f/MIDI%20Editor/nofish_Turn%20toolbar%20btn%20on%20when%20take%20pooled.eel</source>
-      </version>
-    </reapack>
-    <reapack name="Set all events of selected MIDI items to specific channel.lua" type="script" desc="nofish_Set all events of selected MIDI items to specific channel">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 Changes the channel of all notes, CCs and notation events in all selected MIDI items to a specific channel\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab At least one MIDI take must be selected while the script is run to show a prompt to enter new channel for events\sa180\par}
-}
-]]></description>
-        <link rel="website">http://forum.cockos.com/showthread.php?t=192336</link>
-      </metadata>
-      <version name="1.01" author="juliansader, nofish" time="2017-05-29T18:14:46Z">
-        <changelog><![CDATA[+ nofish: added user prompt, check for required Reaper version]]></changelog>
-        <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/509d553b3d9feec9b2ecb97fdc0a865e4078f0f3/MIDI%20Editor/Set%20all%20events%20of%20selected%20MIDI%20items%20to%20specific%20channel.lua</source>
       </version>
     </reapack>
   </category>
