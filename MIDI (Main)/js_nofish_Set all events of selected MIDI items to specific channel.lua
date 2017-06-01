@@ -1,6 +1,6 @@
 --[[
  * ReaScript Name: Set all events of selected MIDI items to specific channel
- * Version: 1.01
+ * Version: 1.02
  * Author: juliansader, nofish
  * About:
  *  Changes the channel of all notes, CCs and  notation events in all selected MIDI items to a specific channel   
@@ -17,6 +17,9 @@
 
   * v1.01 - May 29 2017
     + nofish: added user prompt, check for required Reaper version
+    
+  * v1.02 - June 01 2017
+    + nofish: moved script from MIDI editor to Main section (since it's based on item selection)
 --]]
 ---------------
 
