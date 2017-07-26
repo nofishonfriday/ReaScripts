@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="edef946377847905dd6d00a17561247fd014f935">
+<index version="1" name="nofish ReaScripts" commit="7e22b8786a547797241a336e8dd8090196c917f6">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script">
       <metadata>
@@ -77,6 +77,16 @@
     </reapack>
   </category>
   <category name="misc">
+    <reapack name="mpl_nofishMod_Zoom horizontally, change grid relatively (mousewheel) (no Grid Snap auto-toggle) .lua" type="script" desc="Zoom horizontally, change grid relatively (mousewheel)">
+      <metadata>
+        <link rel="website">http://forum.cockos.com/member.php?u=70694</link>
+      </metadata>
+      <version name="1.2" author="MPL, mod by nofish" time="2017-07-26T22:07:42Z">
+        <changelog><![CDATA[+ prevent spam undo history
++ nofish mod: no Grid / Snap auto-toggle (https://forum.cockos.com/showpost.php?p=1868963&postcount=1500)]]></changelog>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/7e22b8786a547797241a336e8dd8090196c917f6/misc/mpl_nofishMod_Zoom%20horizontally,%20change%20grid%20relatively%20(mousewheel)%20(no%20Grid%20Snap%20auto-toggle)%20.lua</source>
+      </version>
+    </reapack>
     <reapack name="nofish_Dynamic mixer.lua" type="script">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
