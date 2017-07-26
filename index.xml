@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="7e22b8786a547797241a336e8dd8090196c917f6">
+<index version="1" name="nofish ReaScripts" commit="11a417c8d8787fd2a8bbb55b5ac7c649ffe429d0">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script">
       <metadata>
@@ -77,7 +77,7 @@
     </reapack>
   </category>
   <category name="misc">
-    <reapack name="mpl_nofishMod_Zoom horizontally, change grid relatively (mousewheel) (no Grid Snap auto-toggle) .lua" type="script" desc="Zoom horizontally, change grid relatively (mousewheel)">
+    <reapack name="mpl_nofishMod_Zoom horizontally, change grid relatively (mousewheel) (no Grid Snap auto-toggle) .lua" type="script" desc="Zoom horizontally, change grid relatively (mousewheel) (no Grid Snap auto-toggle)">
       <metadata>
         <link rel="website">http://forum.cockos.com/member.php?u=70694</link>
       </metadata>

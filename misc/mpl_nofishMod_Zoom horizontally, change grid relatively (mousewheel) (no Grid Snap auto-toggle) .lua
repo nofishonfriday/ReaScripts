@@ -1,4 +1,4 @@
--- @description Zoom horizontally, change grid relatively (mousewheel) 
+-- @description Zoom horizontally, change grid relatively (mousewheel) (no Grid Snap auto-toggle)
 -- @version 1.2
 -- @author MPL, mod by nofish
 -- @changelog
