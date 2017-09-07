@@ -25,6 +25,14 @@ showInfo = true -- true/false: display info / progress in cosole
 
 ------------------------------------------------------- END OF USER CONFIG AREA
 
+--[[
+-- Start off with a little 'trick' to prevent REAPER from automatically
+--    creating an undo point if no changes are made. (thanks JS)
+function preventUndo()
+end
+reaper.defer(preventUndo)
+--]]
+
 
 reaper.ClearConsole()
 
@@ -55,6 +63,8 @@ end
 
 gotUserInput = false
 userPressedCancel = false
+analyzedAtLeastOneItem = false
+
 
 function promptUser()
   if reaper.HasExtState("NF_normalizeToMaxShrtTermLUFS", "shortTermTargetLUFS") then
@@ -78,7 +88,6 @@ function promptUser()
     userPressedCancel = true
   end
 end
-
 
 
 function main()
@@ -114,13 +123,11 @@ function main()
       success, lufsIntegrated, range, truePeak, truePeakPos, shortTermMax, momentaryMax = reaper.NF_AnalyzeTakeLoudness(take, false)
       -- msg("short term max: " .. shortTermMax)
       
-      
       if (showInfo) then
         msg(reaper.GetTakeName(take) .. ":" .. "\n" .. "short term max: " .. round(shortTermMax, 2))
       end
       
       deltaVol = LUFSshortTermMaxTarget - shortTermMax + origTakeVol
-      
       
       if (showInfo) then
         msg("adjustment: " .. round((LUFSshortTermMaxTarget - shortTermMax), 2))
@@ -135,11 +142,12 @@ function main()
         msg("skipped (not an audio item)")
         msg("")
       end
-      
+     
+    analyzedAtLeastOneItem = true 
     end -- ENDIF active take
   end -- ENDLOOP through selected items
   
-  if (showInfo) then
+  if (showInfo and analyzedAtLeastOneItem) then
     msg("Done.")
   end
   
