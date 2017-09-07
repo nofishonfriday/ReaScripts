@@ -18,7 +18,7 @@
     + initial version
 
   * v1.01 -  September 7 2017
-    # added required REAPER / SWS version check
+    + added required REAPER / SWS version check
 --]]
 
 
