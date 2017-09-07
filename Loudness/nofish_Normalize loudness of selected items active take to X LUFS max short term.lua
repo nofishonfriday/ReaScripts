@@ -15,10 +15,10 @@
  * Changelog:
   
  * v1.0 - September 7 2017
-    + initial version
+    + initial release
 
-  * v1.01 -  September 7 2017
-    + added required REAPER / SWS version check
+ * v1.01 - September 7 2017
+    # added required REAPER / SWS version check
 --]]
 
 
