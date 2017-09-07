@@ -16,6 +16,8 @@
   
  * v1.0 - September 7 2017
    + initial version
+ * v1.01 - September 7 2017
+   # added required REAPER / SWS version check
 --]]
 
 
@@ -31,6 +33,13 @@ showInfo = true -- true/false: display info / progress in cosole
 function preventUndo()
 end
 reaper.defer(preventUndo)
+
+
+-- Check whether the required version of REAPER / SWS is available
+if not reaper.NF_AnalyzeTakeLoudness then
+  reaper.ShowMessageBox("This script requires REAPER v5.21 / SWS v2.9.6 or above.", "ERROR", 0)
+  return(false) 
+end
 
 
 reaper.ClearConsole()
