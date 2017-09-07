@@ -1,6 +1,6 @@
 --[[
  * ReaScript Name: nofish_Normalize loudness of selected items active take to X LUFS max short term
- * Version: 1.0
+ * Version: 1.01
  * Author: nofish
  * About:
  *  Normalizes active take of selected audio items to a user defineable LUFS max short term value (sets Item take volume).   
