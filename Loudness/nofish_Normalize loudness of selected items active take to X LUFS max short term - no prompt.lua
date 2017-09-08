@@ -1,10 +1,12 @@
 --[[
- * ReaScript Name: nofish_Normalize loudness of selected items active take to X LUFS max short term
+ * ReaScript Name: nofish_Normalize loudness of selected items active take to X LUFS max short term - no prompt
  * Version: 1.02
  * Author: nofish
  * About:
  *  Normalizes active take of selected audio items to a user defineable LUFS max short term value (sets Item take volume).   
- *  Note: 'Short term loudness' uses a time window of 3 sec. for analysis, so items shorter than this can't be analyzed / normalized correctly.  
+ *  This version of the script doesn't give a user prompt to set the target value (for use in custom actions),  
+ *  but instead uses the target value set in the related script "nofish_Set normalize loudness to X LUFS max short term target vaulue.lua"  
+ *  Note: 'Short term loudness' uses a time window of 3 sec. for analysis, so items shorter than this can't be analyzed / normalized correctly.    
  *  In the script's USER CONFIG AREA can be set if info / progress should be displayed in the console.  
  *    
  *  Requires REAPER v5.21 / SWS v2.9.6 or above  
@@ -73,32 +75,15 @@ function round(num, numDecimalPlaces)
 end
 
 
-gotUserInput = false
-userPressedCancel = false
+shortTermTargetLUFS_noPrompt = -23
 analyzedAtLeastOneItem = false
 
 
-function promptUser()
-  if reaper.HasExtState("NF_normalizeToMaxShrtTermLUFS", "shortTermTargetLUFS") then
-    caption = reaper.GetExtState("NF_normalizeToMaxShrtTermLUFS", "shortTermTargetLUFS")
-  else
-    caption = "-23"
-  end
-    
-  retval, target_string = reaper.GetUserInputs("Normalize to short term max. LUFS", 1, "Target level:", caption)
-  
-  if retval then 
-    if tonumber(target_string) then
-      LUFSshortTermMaxTarget = tonumber(target_string)
-      reaper.SetExtState("NF_normalizeToMaxShrtTermLUFS", "shortTermTargetLUFS", target_string, true)
-      -- gets stored in "reaper-extstate.ini"
-      gotUserInput = true
-    else -- not a number
-      promptUser()
-    end
-  else -- pressed 'Cancel'
-    userPressedCancel = true
-  end
+if reaper.HasExtState("NF_normalizeToMaxShrtTermLUFS_noPrompt", "shortTermTargetLUFS_noPrompt") then
+  shortTermTargetLUFS_noPrompt = reaper.GetExtState("NF_normalizeToMaxShrtTermLUFS_noPrompt", "shortTermTargetLUFS_noPrompt")
+  if tonumber(shortTermTargetLUFS_noPrompt) then
+    LUFSshortTermMaxTarget = tonumber(shortTermTargetLUFS_noPrompt)
+  end 
 end
 
 
@@ -113,12 +98,6 @@ function main()
     local take = reaper.GetActiveTake(item)
     if take ~= nil and not reaper.TakeIsMIDI(take) then -- at least one audio item is selected
     
-      if gotUserInput == false then
-        promptUser()
-        if userPressedCancel == true then
-          break
-        end
-      end
       
       -- do the actual analyzing and normalizing
       reaper.PreventUIRefresh(1)
@@ -156,7 +135,6 @@ function main()
         msg("skipped (not an audio item)")
         msg("")
       end
-     
     end -- ENDIF active take
   end -- ENDLOOP through selected items
   
@@ -171,6 +149,9 @@ end
 
 
 main()
+  
+ 
+
 
 
 
