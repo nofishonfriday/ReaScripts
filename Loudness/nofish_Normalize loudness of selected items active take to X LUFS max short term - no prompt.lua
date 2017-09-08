@@ -1,11 +1,11 @@
 --[[
  * ReaScript Name: nofish_Normalize loudness of selected items active take to X LUFS max short term - no prompt
- * Version: 1.02
+ * Version: 1.03
  * Author: nofish
  * About:
  *  Normalizes active take of selected audio items to a user defineable LUFS max short term value (sets Item take volume).   
  *  This version of the script doesn't give a user prompt to set the target value (for use in custom actions),  
- *  but instead uses the target value set in the related script "nofish_Set normalize loudness to X LUFS max short term target value.lua"  
+ *  but instead uses the target value set in the related script "nofish_Set normalize loudness to X LUFS max short term target vaulue.lua"  
  *  Note: 'Short term loudness' uses a time window of 3 sec. for analysis, so items shorter than this can't be analyzed / normalized correctly.    
  *  In the script's USER CONFIG AREA can be set if info / progress should be displayed in the console.  
  *    
@@ -24,6 +24,9 @@
     
  * v1.02 - September 8 2017
     # better console output
+    
+ * v1.03 - September 8 2017
+    # fixed nil value
 --]]
 
 
@@ -75,7 +78,7 @@ function round(num, numDecimalPlaces)
 end
 
 
-shortTermTargetLUFS_noPrompt = -23
+LUFSshortTermMaxTarget = -23
 analyzedAtLeastOneItem = false
 
 
