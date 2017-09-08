@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="cebd837ce969f4a0306a9372301520fb972dbdfa">
+<index version="1" name="nofish ReaScripts" commit="31a29efa5b45eb9c1067cd5efeaa5c51bed4623f">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script">
       <metadata>
@@ -24,7 +24,7 @@
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 Normalizes active take of selected audio items to a user defineable LUFS max short term value (sets Item take volume).\line This version of the script doesn't give a user prompt to set the target value (for use in custom actions),\line but instead uses the target value set in the related script "nofish_Set normalize loudness to X LUFS max short term target vaulue.lua"\line Note: 'Short term loudness' uses a time window of 3 sec. for analysis, so items shorter than this can't be analyzed / normalized correctly.\line In the script's USER CONFIG AREA can be set if info / progress should be displayed in the console.\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 Normalizes active take of selected audio items to a user defineable LUFS max short term value (sets Item take volume).\line This version of the script doesn't give a user prompt to set the target value (for use in custom actions),\line but instead uses the target value set in the related script "nofish_Set normalize loudness to X LUFS max short term target value.lua"\line Note: 'Short term loudness' uses a time window of 3 sec. for analysis, so items shorter than this can't be analyzed / normalized correctly.\line In the script's USER CONFIG AREA can be set if info / progress should be displayed in the console.\par}
 {\pard \ql \f0 \sa180 \li0 \fi0 Requires REAPER v5.21 / SWS v2.9.6 or above\par}
 }
 ]]></description>
@@ -59,7 +59,7 @@
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/cebd837ce969f4a0306a9372301520fb972dbdfa/Loudness/nofish_Normalize%20loudness%20of%20selected%20items%20active%20take%20to%20X%20LUFS%20max%20short%20term.lua</source>
       </version>
     </reapack>
-    <reapack name="nofish_Set normalize loudness to X LUFS max short term target vaulue.lua" type="script" desc="nofish_Set normalize loudness to X LUFS max short term target vaulue">
+    <reapack name="nofish_Set normalize loudness to X LUFS max short term target value.lua" type="script" desc="nofish_Set normalize loudness to X LUFS max short term target value">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -69,9 +69,9 @@
 }
 ]]></description>
       </metadata>
-      <version name="1.0" author="nofish" time="2017-09-08T15:01:12Z">
+      <version name="1.0" author="nofish" time="2017-09-08T15:39:56Z">
         <changelog><![CDATA[+ initial release]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/cebd837ce969f4a0306a9372301520fb972dbdfa/Loudness/nofish_Set%20normalize%20loudness%20to%20X%20LUFS%20max%20short%20term%20target%20vaulue.lua</source>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/31a29efa5b45eb9c1067cd5efeaa5c51bed4623f/Loudness/nofish_Set%20normalize%20loudness%20to%20X%20LUFS%20max%20short%20term%20target%20value.lua</source>
       </version>
     </reapack>
   </category>
