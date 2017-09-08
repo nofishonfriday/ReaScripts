@@ -5,7 +5,7 @@
  * About:
  *  Normalizes active take of selected audio items to a user defineable LUFS max short term value (sets Item take volume).   
  *  This version of the script doesn't give a user prompt to set the target value (for use in custom actions),  
- *  but instead uses the target value set in the related script "nofish_Set normalize loudness to X LUFS max short term target vaulue.lua"  
+ *  but instead uses the target value set in the related script "nofish_Set normalize loudness to X LUFS max short term target value.lua"  
  *  Note: 'Short term loudness' uses a time window of 3 sec. for analysis, so items shorter than this can't be analyzed / normalized correctly.    
  *  In the script's USER CONFIG AREA can be set if info / progress should be displayed in the console.  
  *    
