@@ -3,7 +3,7 @@
  * Version: 1.02
  * Author: nofish
  * About:
- *  Normalizes active take of selected audio items to a user defineable LUFS max short term value (sets Item take volume).   
+ *  Normalizes active take of selected audio items to a user defineable LUFS max momentary value (sets Item take volume).   
  *  Note: 'Momentary loudness' uses a time window of 0.4 sec. for analysis, so items shorter than this can't be analyzed / normalized correctly.  
  *  In the script's USER CONFIG AREA can be set if info / progress should be displayed in the console.  
  *    
