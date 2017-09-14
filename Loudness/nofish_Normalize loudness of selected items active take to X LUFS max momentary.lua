@@ -1,6 +1,6 @@
 --[[
  * ReaScript Name: nofish_Normalize loudness of selected items active take to X LUFS max momentary
- * Version: 1.02
+ * Version: 1.03
  * Author: nofish
  * About:
  *  Normalizes active take of selected audio items to a user defineable LUFS max momentary value (sets Item take volume).   
@@ -22,6 +22,9 @@
     
  * v1.02 - September 8 2017
     # better console output
+    
+ * v1.03 - September 14 2017
+    # warn when item is too short for analysis, avoid applying crazy gain in this case
 --]]
 
 
@@ -139,17 +142,26 @@ function main()
         msg(reaper.GetTakeName(take) .. ":" .. "\n" .. "momentary max: " .. round(momentaryMax, 2))
       end
       
-      deltaVol = LUFSmomentaryMaxTarget - momentaryMax + origTakeVol
+      -- check if item is (not) too short for analysis
+      if (momentaryMax > -100.0) then
+        deltaVol = LUFSmomentaryMaxTarget - momentaryMax + origTakeVol
+        
+        if (showInfo) then
+          msg("adjustment: " .. round((LUFSmomentaryMaxTarget - momentaryMax), 2))
+          msg("") -- empty line
+        end
       
-      if (showInfo) then
-        msg("adjustment: " .. round((LUFSmomentaryMaxTarget - momentaryMax), 2))
-        msg("") -- empty line
+        reaper.SetMediaItemTakeInfo_Value(take, "D_VOL", (DB2VAL(deltaVol)))
+      
+        analyzedAtLeastOneItem = true 
+      
+      else -- momentary max is < -100.0
+        if (showInfo) then
+          msg("Can't normalize. Item probably too short.")
+          msg("") -- empty line
+        end
       end
-      
-      reaper.SetMediaItemTakeInfo_Value(take, "D_VOL", (DB2VAL(deltaVol)))
-      
-      analyzedAtLeastOneItem = true 
-      
+        
     else -- if take ~= nil and not reaper.TakeIsMIDI(take)...
       if (showInfo) then
         msg("Processing item " .. i+1 .. " of " .. selected_items_count .. "...")
