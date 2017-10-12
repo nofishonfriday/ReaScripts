@@ -1,6 +1,6 @@
 --[[
  * ReaScript Name: nofish_Normalize loudness of selected items active take to X LUFS max short term - no prompt
- * Version: 1.04
+ * Version: 1.05
  * Author: nofish
  * About:
  *  Normalizes active take of selected audio items to a user defineable LUFS max short term value (sets Item take volume).   
@@ -30,12 +30,16 @@
     
  * v1.04 - September 14 2017
     # warn when item is too short for analysis, avoid applying crazy gain in this case
+    
+ * v1.05 - October 1 2017
+    # change VAL/DB conversion functions
+    # make more variables local
 --]]
 
 
 -- USER CONFIG AREA -----------------------------------------------------------
 
-showInfo = true -- true/false: display info / progress in cosole
+showInfo = false -- true/false: display info / progress in cosole
 
 ------------------------------------------------------- END OF USER CONFIG AREA
 
@@ -60,6 +64,7 @@ function msg(m)
   return reaper.ShowConsoleMsg(tostring(m) .. "\n")
 end
 
+--[[
 -- from Justin
 function DB2VAL(x)
   return math.exp(x*0.11512925464970228420089957273422)
@@ -73,8 +78,16 @@ function VAL2DB(x)
   end
   return x
 end
+--]]
+
+--https://github.com/ReaTeam/ReaScripts-Templates/blob/master/Values/X-Raym_Val%20to%20dB%20-%20dB%20to%20Val.lua
+-- thanks X-Raym
+function VAL2DB(val) return 20*math.log(val, 10) end
+function DB2VAL(dB_val) return 10^(dB_val/20) end
 
 
+
+-- only used for console display
 function round(num, numDecimalPlaces)
   local mult = 10^(numDecimalPlaces or 0)
   return math.floor(num * mult + 0.5) / mult
@@ -117,7 +130,9 @@ function main()
       end
       
       -- only shortTermMax is used here
-      success, lufsIntegrated, range, truePeak, truePeakPos, shortTermMax, momentaryMax = reaper.NF_AnalyzeTakeLoudness(take, false)
+      -- success, lufsIntegrated, range, truePeak, truePeakPos, shortTermMax, momentaryMax = reaper.NF_AnalyzeTakeLoudness(take, false)
+      local _ local shortTermMax
+      _, _, _, _, _, shortTermMax, _ = reaper.NF_AnalyzeTakeLoudness(take, false)
       -- msg("short term max: " .. shortTermMax)
       
       if (showInfo) then
