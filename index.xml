@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="8eafb799fd1530aaa3a28eaf23a32e9b704a4aa5">
+<index version="1" name="nofish ReaScripts" commit="59cbcbaef0db59a7d4832febb2ece1e1d293e9fb">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script">
       <metadata>
@@ -344,6 +344,26 @@
       <version name="1.0" author="nofish" time="2017-10-21T13:38:35Z">
         <changelog><![CDATA[+ Initial release]]></changelog>
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/9e0679a31be6cfb1a68bdaea40f568ba649e42f1/misc/nofish_Reset%20Mix%20-%20all%20tracks%20(for%20stem%20export).lua</source>
+      </version>
+    </reapack>
+    <reapack name="nofish_Reset Mix - selected tracks (for stem export).lua" type="script" desc="nofish_Reset Mix - selected tracks (for stem export)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Does the following:\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Bypass all automation\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Bypass sel. tracks FX (except VSTi)\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Reset sel. tracks volume, reset sel. tracks pan\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Reset master volume, Bypass master FX\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Optionally: Reset all item and take volume\sa180\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="nofish" time="2017-10-21T13:47:18Z">
+        <changelog><![CDATA[+ Initial release]]></changelog>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/59cbcbaef0db59a7d4832febb2ece1e1d293e9fb/misc/nofish_Reset%20Mix%20-%20selected%20tracks%20(for%20stem%20export).lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Reset Mix.lua" type="script" desc="nofish_Reset Mix">
