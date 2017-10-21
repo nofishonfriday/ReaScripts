@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="59cbcbaef0db59a7d4832febb2ece1e1d293e9fb">
+<index version="1" name="nofish ReaScripts" commit="a50203dc3c35f8766abce43061a6ed4ae32afd03">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script">
       <metadata>
@@ -13,7 +13,7 @@
       </metadata>
       <version name="1.0" author="nofish" time="2016-12-26T17:20:10Z">
         <changelog><![CDATA[+ Initial release]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/0ce6f4d99770cb1f5b140c6e687f790f9b517b94/editing/nofish_Delete%20muted%20items%20from%20item%20selection.lua</source>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/c2f497bd9eee531f3dd4dafd88189e35dd86ff16/editing/nofish_Delete%20muted%20items%20from%20item%20selection.lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Select next item (in time) across tracks.lua" type="script" desc="nofish_Select next item (in time) across tracks">
@@ -44,9 +44,9 @@
 }
 ]]></description>
       </metadata>
-      <version name="1.03" author="nofish" time="2017-09-13T20:46:28Z">
+      <version name="1.03" author="nofish" time="2017-09-13T20:44:10Z">
         <changelog><![CDATA[# fixed nil value]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/23800bb3eedad05d8562247de4a5cd03d3dbccbf/Loudness/nofish_Normalize%20loudness%20of%20selected%20items%20active%20take%20to%20X%20LUFS%20max%20momentary%20-%20no%20prompt.lua</source>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/9e27d643455ba28ca54965ac54ab62789c903af0/Loudness/nofish_Normalize%20loudness%20of%20selected%20items%20active%20take%20to%20X%20LUFS%20max%20momentary%20-%20no%20prompt.lua</source>
       </version>
       <version name="1.04" author="nofish" time="2017-09-14T15:34:12Z">
         <changelog><![CDATA[# warn when item is too short for analysis, avoid applying crazy gain in this case]]></changelog>
@@ -64,9 +64,9 @@
 }
 ]]></description>
       </metadata>
-      <version name="1.02" author="nofish" time="2017-09-13T20:46:28Z">
+      <version name="1.02" author="nofish" time="2017-09-13T20:44:10Z">
         <changelog><![CDATA[# better console output]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/23800bb3eedad05d8562247de4a5cd03d3dbccbf/Loudness/nofish_Normalize%20loudness%20of%20selected%20items%20active%20take%20to%20X%20LUFS%20max%20momentary.lua</source>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/9e27d643455ba28ca54965ac54ab62789c903af0/Loudness/nofish_Normalize%20loudness%20of%20selected%20items%20active%20take%20to%20X%20LUFS%20max%20momentary.lua</source>
       </version>
       <version name="1.03" author="nofish" time="2017-09-14T15:34:12Z">
         <changelog><![CDATA[# warn when item is too short for analysis, avoid applying crazy gain in this case]]></changelog>
@@ -114,13 +114,12 @@
 ]]></description>
       </metadata>
       <version name="1.0" author="nofish" time="2017-09-07T18:21:57Z">
-        <changelog><![CDATA[+ initial release
-]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/11c018a207466982b7cd836dc0dfb36e4a996fb7/Loudness/nofish_Normalize%20loudness%20of%20selected%20items%20active%20take%20to%20X%20LUFS%20max%20short%20term.lua</source>
+        <changelog><![CDATA[+ initial version]]></changelog>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/2e27047e6017334988d95dd6b07d5e0286743433/Loudness/nofish_Normalize%20loudness%20of%20selected%20items%20active%20take%20to%20X%20LUFS%20max%20short%20term.lua</source>
       </version>
-      <version name="1.01" author="nofish" time="2017-09-07T22:51:00Z">
+      <version name="1.01" author="nofish" time="2017-09-08T12:45:39Z">
         <changelog><![CDATA[# added required REAPER / SWS version check]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/d667f0253a231292fbfa95b26d7d9eca4b848516/Loudness/nofish_Normalize%20loudness%20of%20selected%20items%20active%20take%20to%20X%20LUFS%20max%20short%20term.lua</source>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/e431fac20627a4836e619024c879fb1f8839b3b4/Loudness/nofish_Normalize%20loudness%20of%20selected%20items%20active%20take%20to%20X%20LUFS%20max%20short%20term.lua</source>
       </version>
       <version name="1.02" author="nofish" time="2017-09-08T15:01:12Z">
         <changelog><![CDATA[# better console output]]></changelog>
@@ -141,9 +140,9 @@
 }
 ]]></description>
       </metadata>
-      <version name="1.0" author="nofish" time="2017-09-13T20:46:28Z">
+      <version name="1.0" author="nofish" time="2017-09-13T20:44:10Z">
         <changelog><![CDATA[+ initial release]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/23800bb3eedad05d8562247de4a5cd03d3dbccbf/Loudness/nofish_Set%20normalize%20loudness%20to%20X%20LUFS%20max%20momentary%20target%20value.lua</source>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/9e27d643455ba28ca54965ac54ab62789c903af0/Loudness/nofish_Set%20normalize%20loudness%20to%20X%20LUFS%20max%20momentary%20target%20value.lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Set normalize loudness to X LUFS max short term target value.lua" type="script" desc="nofish_Set normalize loudness to X LUFS max short term target value">
@@ -198,12 +197,12 @@
       <version name="1.0" author="nofish" time="2017-05-20T22:26:01Z">
         <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/2243cb128c2cbe5af7d5d1953732632fd93cbb7f/MIDI%20Editor/'Intelligent'%20toogle%20mute%20note(s)%20(under%20mouse).lua</source>
       </version>
+      <version name="1.0.0-1" author="nofish" time="2017-05-21T14:03:00Z">
+        <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/861b5b2494b79ec1b17c41a6eec8467efeb8375e/MIDI%20Editor/'Intelligent'%20toogle%20mute%20note(s)%20(under%20mouse).lua</source>
+      </version>
       <version name="1.01" author="nofish" time="2017-05-21T14:50:26Z">
         <changelog><![CDATA[# fix: selected CC's get unintentionally muted, thanks FnA]]></changelog>
         <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/6f0f2309f416fa47313f79c330307c41207027a0/MIDI%20Editor/'Intelligent'%20toogle%20mute%20note(s)%20(under%20mouse).lua</source>
-      </version>
-      <version name="1.0.0-1" author="nofish" time="2017-05-21T14:13:12Z">
-        <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/4cf21eec3fceece8f3f06c222c6c6f1fb0da2f76/MIDI%20Editor/'Intelligent'%20toogle%20mute%20note(s)%20(under%20mouse).lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Turn toolbar btn on when take pooled.eel" type="script">
@@ -241,7 +240,7 @@
         <changelog><![CDATA[nofish:
 + script can be assigned to a toolbar button (lights when active), press again to exit
 + MCP track view is restored on exit (thanks spk77)]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/70a7911133b7cb51182a2fb8336c624b8ed15e1e/misc/nofish_Dynamic%20mixer.lua</source>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/5ec8124f165a60603a0390ef03a73dff63bcf5b4/misc/nofish_Dynamic%20mixer.lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Grid division display (Arrange) -unfinished-.lua" type="script" desc="nofish_Grid division display (Arrange) -unfinished-">
@@ -306,26 +305,6 @@
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/1ae1f57f8011834f1a892474135c68a518a18f2a/misc/nofish_Realtime%20clock.lua</source>
       </version>
     </reapack>
-    <reapack name="nofish_Reset Mix (for stem export).lua" type="script" desc="nofish_Reset Mix (for stem export)">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 Does the following:\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Bypass all automation\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Bypass all track FX (except VSTi)\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Reset all track volume, reset all track pan\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Reset master volume, Bypass master FX\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Optionally: Reset item and take volume\sa180\par}
-}
-]]></description>
-      </metadata>
-      <version name="1.0" author="nofish" time="2017-10-21T13:29:22Z">
-        <changelog><![CDATA[+ Initial release]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/fac57f59aee3f13c5c8e16f5fe1fc2b489c91058/misc/nofish_Reset%20Mix%20(for%20stem%20export).lua</source>
-      </version>
-    </reapack>
     <reapack name="nofish_Reset Mix - all tracks (for stem export).lua" type="script" desc="nofish_Reset Mix - all tracks (for stem export)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
@@ -341,9 +320,9 @@
 }
 ]]></description>
       </metadata>
-      <version name="1.0" author="nofish" time="2017-10-21T13:38:35Z">
+      <version name="1.0" author="nofish" time="2017-10-21T13:45:28Z">
         <changelog><![CDATA[+ Initial release]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/9e0679a31be6cfb1a68bdaea40f568ba649e42f1/misc/nofish_Reset%20Mix%20-%20all%20tracks%20(for%20stem%20export).lua</source>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/c8db8931787593b5679c718eba9e7199f4252208/misc/nofish_Reset%20Mix%20-%20all%20tracks%20(for%20stem%20export).lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Reset Mix - selected tracks (for stem export).lua" type="script" desc="nofish_Reset Mix - selected tracks (for stem export)">
@@ -361,29 +340,9 @@
 }
 ]]></description>
       </metadata>
-      <version name="1.0" author="nofish" time="2017-10-21T13:47:18Z">
+      <version name="1.0" author="nofish" time="2017-10-21T13:55:06Z">
         <changelog><![CDATA[+ Initial release]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/59cbcbaef0db59a7d4832febb2ece1e1d293e9fb/misc/nofish_Reset%20Mix%20-%20selected%20tracks%20(for%20stem%20export).lua</source>
-      </version>
-    </reapack>
-    <reapack name="nofish_Reset Mix.lua" type="script" desc="nofish_Reset Mix">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 Does the following:\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Bypass all automation\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Bypass all track FX (except VSTi)\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Reset all track volume, reset all track pan\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Reset master volume, Bypass master FX\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Optionally: Reset item and take volume\sa180\par}
-}
-]]></description>
-      </metadata>
-      <version name="1.0" author="nofish" time="2017-10-21T13:24:18Z">
-        <changelog><![CDATA[+ Initial release]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/cf3426a40d2f44de2f558003aa53d53e4ee45b2d/misc/nofish_Reset%20Mix.lua</source>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/a50203dc3c35f8766abce43061a6ed4ae32afd03/misc/nofish_Reset%20Mix%20-%20selected%20tracks%20(for%20stem%20export).lua</source>
       </version>
     </reapack>
     <reapack name="nofish_run action - wait x sec - run next action (example).lua" type="script" desc="nofish_run action - wait x sec - run next action (example)">
@@ -486,9 +445,8 @@
 }
 ]]></description>
       </metadata>
-      <version name="1.0" time="2016-12-26T17:49:14Z" author="nofish">
-        <changelog><![CDATA[+ 1.0 Initial release]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/70a7911133b7cb51182a2fb8336c624b8ed15e1e/misc/nofish_Write%20tracknames%20to%20textfile.eel</source>
+      <version name="1.0" time="2016-12-26T17:49:14Z">
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/1ae1f57f8011834f1a892474135c68a518a18f2a/misc/nofish_Write%20tracknames%20to%20textfile.eel</source>
       </version>
     </reapack>
   </category>
