@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="a50203dc3c35f8766abce43061a6ed4ae32afd03">
+<index version="1" name="nofish ReaScripts" commit="551d7882882f28d8788f5d34cf9a5c9e2e343139">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script">
       <metadata>
@@ -271,6 +271,22 @@
       <version name="1.0" author="nofish" time="2016-12-26T17:20:10Z">
         <changelog><![CDATA[+ Initial release]]></changelog>
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/c2f497bd9eee531f3dd4dafd88189e35dd86ff16/misc/nofish_List%20tracknames%20in%20console.lua</source>
+      </version>
+    </reapack>
+    <reapack name="nofish_Needle dropping.lua" type="script" desc="nofish_Needle dropping.lua">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Jumps to random item positions See https://forum.cockos.com/showthread.php?t=200261\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="nofish" time="2017-12-08T16:57:45Z">
+        <changelog><![CDATA[+ Initial Release
+]]></changelog>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/551d7882882f28d8788f5d34cf9a5c9e2e343139/misc/nofish_Needle%20dropping.lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Normalize selected items active take to X dBFS true peak.lua" type="script" desc="nofish_Normalize selected items active take to X dBFS true peak">
