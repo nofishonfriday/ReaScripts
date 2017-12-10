@@ -1,6 +1,6 @@
 --[[
  * ReaScript Name: nofish_Needle dropping.lua
- * Version: 1.0
+ * Version: 1.01
  * Author: nofish
  * Author URI: https://forum.cockos.com/member.php?u=6870
  * Extensions: SWS/S&M 2.8.1
