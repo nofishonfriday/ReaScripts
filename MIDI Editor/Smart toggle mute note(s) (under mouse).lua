@@ -24,8 +24,6 @@
 -- reaper.ShowConsoleMsg("") -- clear console
 
 
-gergerg
-
 function msg(m)
   reaper.ShowConsoleMsg(tostring(m) .. "\n")
 end
