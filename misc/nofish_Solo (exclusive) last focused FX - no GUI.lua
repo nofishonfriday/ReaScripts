@@ -1,5 +1,6 @@
 --[[
  * Version: 1.0
+ * ReaScript Name: Solo (exclusive) last focused FX - no GUI
  * Author: nofish
  * About:
  *  http://forum.cockos.com/showpost.php?p=1759098&postcount=8

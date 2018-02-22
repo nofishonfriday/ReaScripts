@@ -1,5 +1,5 @@
 --[[
- * ReaScript Name: nofish_Normalize loudness of selected items active take to X LUFS max momentary
+ * ReaScript Name: Normalize loudness of selected items active take to X LUFS max momentary
  * Version: 1.03
  * Author: nofish
  * About:

@@ -1,5 +1,5 @@
 --[[
- * ReaScript Name: nofish_Set normalize loudness to X LUFS max momentary target value
+ * ReaScript Name: Set normalize loudness to X LUFS max momentary target value
  * Version: 1.0
  * Author: nofish
  * About:

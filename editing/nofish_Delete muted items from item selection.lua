@@ -1,5 +1,6 @@
 --[[
  * Version: 1.0
+ * ReaScript Name: Delete muted items from item selection
  * Author: nofish
  * About:
  *   see http://forum.cockos.com/showpost.php?p=1589221&postcount=4

@@ -1,5 +1,5 @@
 --[[
- * ReaScript Name: nofish_Normalize selected items active take to X dBFS true peak
+ * ReaScript Name: Normalize selected items active take to X dBFS true peak
  * Version: 1.05
  * Author: nofish
  * About:

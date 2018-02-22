@@ -1,5 +1,5 @@
 --[[
- * ReaScript Name: nofish_List tracknames in console
+ * ReaScript Name: List tracknames in console
  * Version: 1.0
  * Author: nofish
  * About:

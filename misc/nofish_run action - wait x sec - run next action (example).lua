@@ -1,5 +1,5 @@
 --[[
- * ReaScript Name: nofish_run action - wait x sec - run next action (example)
+ * ReaScript Name: Run action - wait x sec - run next action (example)
  * Version: 1.0
  * Author: nofish
  * About:

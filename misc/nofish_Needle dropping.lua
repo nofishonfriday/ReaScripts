@@ -1,5 +1,5 @@
 --[[
- * ReaScript Name: nofish_Needle dropping.lua
+ * ReaScript Name: Needle dropping.lua
  * Version: 1.01
  * Author: nofish
  * Author URI: https://forum.cockos.com/member.php?u=6870

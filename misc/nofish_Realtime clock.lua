@@ -1,5 +1,5 @@
 --[[
- * ReaScript Name: nofish_Realtime clock
+ * ReaScript Name: Realtime clock
  * Version: 1.0
  * Author: nofish
  * About:

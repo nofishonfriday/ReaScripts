@@ -1,5 +1,5 @@
 --[[
- * ReaScript Name: nofish_Reset Mix - all tracks (for stem export)
+ * ReaScript Name: Reset Mix - all tracks (for stem export)
  * Version: 1.0
  * Author: nofish
  * About:

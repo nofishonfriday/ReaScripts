@@ -1,5 +1,5 @@
 --[[
- * ReaScript Name: nofish_Select next item (in time) across tracks
+ * ReaScript Name: Select next item (in time) across tracks
  * Version: 1.0
  * Author: nofish
  * Author URI: https://forum.cockos.com/member.php?u=6870

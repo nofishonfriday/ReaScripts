@@ -1,5 +1,6 @@
 --[[
  * Version: 1.0
+ * ReaScript Name: Save track FX chains (for sel. tracks)
  * Author: nofish
  * About:
  *   see http://forum.cockos.com/showpost.php?p=1596059&postcount=26

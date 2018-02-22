@@ -1,5 +1,6 @@
 --[[
  * Version: 1.02
+ * ReaScript Name: Dynamic Mixer (WIP)
  * Author: nofish
  * About:
  *  for use with toolbar button
