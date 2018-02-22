@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="5a35e2bbc69c7c035d424f57bfa9001f3b39f663">
+<index version="1" name="nofish ReaScripts" commit="cc8d653d22bcd110c57204a6edf8ea634544c588">
   <category name="editing">
-    <reapack name="nofish_Delete muted items from item selection.lua" type="script">
+    <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -16,7 +16,7 @@
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/c2f497bd9eee531f3dd4dafd88189e35dd86ff16/editing/nofish_Delete%20muted%20items%20from%20item%20selection.lua</source>
       </version>
     </reapack>
-    <reapack name="nofish_Select next item (in time) across tracks.lua" type="script" desc="nofish_Select next item (in time) across tracks">
+    <reapack name="nofish_Select next item (in time) across tracks.lua" type="script" desc="Select next item (in time) across tracks">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -33,7 +33,7 @@
     </reapack>
   </category>
   <category name="Loudness">
-    <reapack name="nofish_Normalize loudness of selected items active take to X LUFS max momentary - no prompt.lua" type="script" desc="nofish_Normalize loudness of selected items active take to X LUFS max momentary - no prompt">
+    <reapack name="nofish_Normalize loudness of selected items active take to X LUFS max momentary - no prompt.lua" type="script" desc="Normalize loudness of selected items active take to X LUFS max momentary - no prompt">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -53,7 +53,7 @@
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/7e84b1d140e4732ef4349dc7a7c7dde8c5fbb34a/Loudness/nofish_Normalize%20loudness%20of%20selected%20items%20active%20take%20to%20X%20LUFS%20max%20momentary%20-%20no%20prompt.lua</source>
       </version>
     </reapack>
-    <reapack name="nofish_Normalize loudness of selected items active take to X LUFS max momentary.lua" type="script" desc="nofish_Normalize loudness of selected items active take to X LUFS max momentary">
+    <reapack name="nofish_Normalize loudness of selected items active take to X LUFS max momentary.lua" type="script" desc="Normalize loudness of selected items active take to X LUFS max momentary">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -73,7 +73,7 @@
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/7e84b1d140e4732ef4349dc7a7c7dde8c5fbb34a/Loudness/nofish_Normalize%20loudness%20of%20selected%20items%20active%20take%20to%20X%20LUFS%20max%20momentary.lua</source>
       </version>
     </reapack>
-    <reapack name="nofish_Normalize loudness of selected items active take to X LUFS max short term - no prompt.lua" type="script" desc="nofish_Normalize loudness of selected items active take to X LUFS max short term - no prompt">
+    <reapack name="nofish_Normalize loudness of selected items active take to X LUFS max short term - no prompt.lua" type="script" desc="Normalize loudness of selected items active take to X LUFS max short term - no prompt">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -102,7 +102,7 @@
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/8c47a87256c8960739735dec4a29a2ce5550af13/Loudness/nofish_Normalize%20loudness%20of%20selected%20items%20active%20take%20to%20X%20LUFS%20max%20short%20term%20-%20no%20prompt.lua</source>
       </version>
     </reapack>
-    <reapack name="nofish_Normalize loudness of selected items active take to X LUFS max short term.lua" type="script" desc="nofish_Normalize loudness of selected items active take to X LUFS max short term">
+    <reapack name="nofish_Normalize loudness of selected items active take to X LUFS max short term.lua" type="script" desc="Normalize loudness of selected items active take to X LUFS max short term">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -130,7 +130,7 @@
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/7e84b1d140e4732ef4349dc7a7c7dde8c5fbb34a/Loudness/nofish_Normalize%20loudness%20of%20selected%20items%20active%20take%20to%20X%20LUFS%20max%20short%20term.lua</source>
       </version>
     </reapack>
-    <reapack name="nofish_Set normalize loudness to X LUFS max momentary target value.lua" type="script" desc="nofish_Set normalize loudness to X LUFS max momentary target value">
+    <reapack name="nofish_Set normalize loudness to X LUFS max momentary target value.lua" type="script" desc="Set normalize loudness to X LUFS max momentary target value">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -145,7 +145,7 @@
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/9e27d643455ba28ca54965ac54ab62789c903af0/Loudness/nofish_Set%20normalize%20loudness%20to%20X%20LUFS%20max%20momentary%20target%20value.lua</source>
       </version>
     </reapack>
-    <reapack name="nofish_Set normalize loudness to X LUFS max short term target value.lua" type="script" desc="nofish_Set normalize loudness to X LUFS max short term target value">
+    <reapack name="nofish_Set normalize loudness to X LUFS max short term target value.lua" type="script" desc="Set normalize loudness to X LUFS max short term target value">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -181,31 +181,7 @@
     </reapack>
   </category>
   <category name="MIDI Editor">
-    <reapack name="'Intelligent' toogle mute note(s) (under mouse).lua" type="script" desc="nofish_'Intelligent' toggle mute note(s) (under mouse)">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 Assign script to shortcut (MIDI editor section).\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab If notes selected: toggle mute state for selected notes\par}
-{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab If no notes selected: toggle mute state for note under mouse (do nothing if mouse cursor isn't over note)\sa180\par}
-}
-]]></description>
-        <link rel="website">http://forum.cockos.com/showthread.php?t=192034</link>
-      </metadata>
-      <version name="1.0" author="nofish" time="2017-05-20T22:26:01Z">
-        <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/2243cb128c2cbe5af7d5d1953732632fd93cbb7f/MIDI%20Editor/'Intelligent'%20toogle%20mute%20note(s)%20(under%20mouse).lua</source>
-      </version>
-      <version name="1.0.0-1" author="nofish" time="2017-05-21T14:03:00Z">
-        <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/861b5b2494b79ec1b17c41a6eec8467efeb8375e/MIDI%20Editor/'Intelligent'%20toogle%20mute%20note(s)%20(under%20mouse).lua</source>
-      </version>
-      <version name="1.01" author="nofish" time="2017-05-21T14:50:26Z">
-        <changelog><![CDATA[# fix: selected CC's get unintentionally muted, thanks FnA]]></changelog>
-        <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/6f0f2309f416fa47313f79c330307c41207027a0/MIDI%20Editor/'Intelligent'%20toogle%20mute%20note(s)%20(under%20mouse).lua</source>
-      </version>
-    </reapack>
-    <reapack name="nofish_Turn toolbar btn on when take pooled.eel" type="script">
+    <reapack name="nofish_Turn toolbar btn on when take pooled.eel" type="script" desc="Turn toolbar button on when take pooled (unfinished, missing API)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -221,7 +197,7 @@
     </reapack>
   </category>
   <category name="misc">
-    <reapack name="nofish_Dynamic mixer.lua" type="script">
+    <reapack name="nofish_Dynamic mixer.lua" type="script" desc="Dynamic Mixer (WIP)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -243,22 +219,7 @@
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/5ec8124f165a60603a0390ef03a73dff63bcf5b4/misc/nofish_Dynamic%20mixer.lua</source>
       </version>
     </reapack>
-    <reapack name="nofish_Grid division display (Arrange) -unfinished-.lua" type="script" desc="nofish_Grid division display (Arrange) -unfinished-">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 displays current arrange grid setting, including swing some things missing currently... see http://forum.cockos.com/showthread.php?t=189700\par}
-}
-]]></description>
-      </metadata>
-      <version name="1.1" author="nofish" time="2017-05-02T18:43:42Z">
-        <changelog><![CDATA[# only calculate when grid changed (save CPU)]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/a54998ad65e3a6c0fd724f7e0f7e390531b56ef5/misc/nofish_Grid%20division%20display%20(Arrange)%20-unfinished-.lua</source>
-      </version>
-    </reapack>
-    <reapack name="nofish_List tracknames in console.lua" type="script" desc="nofish_List tracknames in console">
+    <reapack name="nofish_List tracknames in console.lua" type="script" desc="List tracknames in console">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -273,7 +234,7 @@
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/c2f497bd9eee531f3dd4dafd88189e35dd86ff16/misc/nofish_List%20tracknames%20in%20console.lua</source>
       </version>
     </reapack>
-    <reapack name="nofish_Needle dropping.lua" type="script" desc="nofish_Needle dropping.lua">
+    <reapack name="nofish_Needle dropping.lua" type="script" desc="Needle dropping.lua">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -293,7 +254,7 @@
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/5a35e2bbc69c7c035d424f57bfa9001f3b39f663/misc/nofish_Needle%20dropping.lua</source>
       </version>
     </reapack>
-    <reapack name="nofish_Normalize selected items active take to X dBFS true peak.lua" type="script" desc="nofish_Normalize selected items active take to X dBFS true peak">
+    <reapack name="nofish_Normalize selected items active take to X dBFS true peak.lua" type="script" desc="Normalize selected items active take to X dBFS true peak">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -310,7 +271,7 @@
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/c7edf396d1db3cdb673f383afc1ad0cacc6199a5/misc/nofish_Normalize%20selected%20items%20active%20take%20to%20X%20dBFS%20true%20peak.lua</source>
       </version>
     </reapack>
-    <reapack name="nofish_Realtime clock.lua" type="script" desc="nofish_Realtime clock">
+    <reapack name="nofish_Realtime clock.lua" type="script" desc="Realtime clock">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -325,7 +286,7 @@
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/1ae1f57f8011834f1a892474135c68a518a18f2a/misc/nofish_Realtime%20clock.lua</source>
       </version>
     </reapack>
-    <reapack name="nofish_Reset Mix - all tracks (for stem export).lua" type="script" desc="nofish_Reset Mix - all tracks (for stem export)">
+    <reapack name="nofish_Reset Mix - all tracks (for stem export).lua" type="script" desc="Reset Mix - all tracks (for stem export)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -345,7 +306,7 @@
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/c8db8931787593b5679c718eba9e7199f4252208/misc/nofish_Reset%20Mix%20-%20all%20tracks%20(for%20stem%20export).lua</source>
       </version>
     </reapack>
-    <reapack name="nofish_Reset Mix - selected tracks (for stem export).lua" type="script" desc="nofish_Reset Mix - selected tracks (for stem export)">
+    <reapack name="nofish_Reset Mix - selected tracks (for stem export).lua" type="script" desc="Reset Mix - selected tracks (for stem export)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -365,7 +326,7 @@
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/a50203dc3c35f8766abce43061a6ed4ae32afd03/misc/nofish_Reset%20Mix%20-%20selected%20tracks%20(for%20stem%20export).lua</source>
       </version>
     </reapack>
-    <reapack name="nofish_run action - wait x sec - run next action (example).lua" type="script" desc="nofish_run action - wait x sec - run next action (example)">
+    <reapack name="nofish_run action - wait x sec - run next action (example).lua" type="script" desc="Run action - wait x sec - run next action (example)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -380,7 +341,7 @@
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/6eb01ea89afe161677231b85c645cccb4f072cb0/misc/nofish_run%20action%20-%20wait%20x%20sec%20-%20run%20next%20action%20(example).lua</source>
       </version>
     </reapack>
-    <reapack name="nofish_Save track FX chains (for sel tracks).lua" type="script">
+    <reapack name="nofish_Save track FX chains (for sel tracks).lua" type="script" desc="Save track FX chains (for sel. tracks)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -395,7 +356,7 @@
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/1ae1f57f8011834f1a892474135c68a518a18f2a/misc/nofish_Save%20track%20FX%20chains%20(for%20sel%20tracks).lua</source>
       </version>
     </reapack>
-    <reapack name="nofish_Solo (exclusive) last focused FX - GUI.lua" type="script">
+    <reapack name="nofish_Solo (exclusive) last focused FX - GUI.lua" type="script" desc="Solo (exclusive) last focused FX - GUI">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -410,7 +371,7 @@
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/6615f78272f76e52967fb56b93933bfdf4a52b72/misc/nofish_Solo%20(exclusive)%20last%20focused%20FX%20-%20GUI.lua</source>
       </version>
     </reapack>
-    <reapack name="nofish_Solo (exclusive) last focused FX - no GUI (w_undo point).lua" type="script">
+    <reapack name="nofish_Solo (exclusive) last focused FX - no GUI (w_undo point).lua" type="script" desc="Solo (exclusive) last focused FX - no GUI (w_undo point)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -425,7 +386,7 @@
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/6615f78272f76e52967fb56b93933bfdf4a52b72/misc/nofish_Solo%20(exclusive)%20last%20focused%20FX%20-%20no%20GUI%20(w_undo%20point).lua</source>
       </version>
     </reapack>
-    <reapack name="nofish_Solo (exclusive) last focused FX - no GUI.lua" type="script">
+    <reapack name="nofish_Solo (exclusive) last focused FX - no GUI.lua" type="script" desc="Solo (exclusive) last focused FX - no GUI">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -440,7 +401,7 @@
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/6615f78272f76e52967fb56b93933bfdf4a52b72/misc/nofish_Solo%20(exclusive)%20last%20focused%20FX%20-%20no%20GUI.lua</source>
       </version>
     </reapack>
-    <reapack name="nofish_Toggle Ignore mousewheel on all faders.lua" type="script" desc="nofish_Toggle &quot;Ignore mousewheel on all faders&quot;">
+    <reapack name="nofish_Toggle Ignore mousewheel on all faders.lua" type="script" desc="Toggle &quot;Ignore mousewheel on all faders&quot;">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
@@ -455,7 +416,7 @@
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/2fb4543cc70459cc224f12814b9b52eefbac9f96/misc/nofish_Toggle%20Ignore%20mousewheel%20on%20all%20faders.lua</source>
       </version>
     </reapack>
-    <reapack name="nofish_Write tracknames to textfile.eel" type="script">
+    <reapack name="nofish_Write tracknames to textfile.eel" type="script" desc="Write tracknames to textfile">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
