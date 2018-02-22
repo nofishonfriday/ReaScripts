@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="cc8d653d22bcd110c57204a6edf8ea634544c588">
+<index version="1" name="nofish ReaScripts" commit="e24b6073ada3eef2fad289bcb8f35062978af7be">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
@@ -193,6 +193,24 @@
       </metadata>
       <version name="1.0" author="nofish" time="2017-05-20T22:26:01Z">
         <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/2243cb128c2cbe5af7d5d1953732632fd93cbb7f/MIDI%20Editor/nofish_Turn%20toolbar%20btn%20on%20when%20take%20pooled.eel</source>
+      </version>
+    </reapack>
+    <reapack name="Smart toggle mute note(s) (under mouse).lua" type="script" desc="Smart toggle mute note(s) (under mouse)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Assign script to shortcut (MIDI editor section).\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab If notes selected: toggle mute state for selected notes\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab If no notes selected: toggle mute state for note under mouse (do nothing if mouse cursor isn't over note)\sa180\par}
+}
+]]></description>
+        <link rel="website">http://forum.cockos.com/showthread.php?t=192034</link>
+      </metadata>
+      <version name="1.01" author="nofish" time="2018-02-22T16:57:21Z">
+        <changelog><![CDATA[# fix: selected CC's get unintentionally muted, thanks FnA]]></changelog>
+        <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/e24b6073ada3eef2fad289bcb8f35062978af7be/MIDI%20Editor/Smart%20toggle%20mute%20note(s)%20(under%20mouse).lua</source>
       </version>
     </reapack>
   </category>
