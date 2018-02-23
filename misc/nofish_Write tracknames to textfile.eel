@@ -1,11 +1,12 @@
-// Version: 1.01
+// Version 1.01
 // Description: Write tracknames to textfile
 // Author: nofish
 // About:
 //   http://forum.cockos.com/showthread.php?t=169099
+
 // Changelog:
-//   + 1.0 Initial release
-//   + 1.01 replace "-" with "" for unnamed tracks
+//  + 1.0 Initial release
+//  + 1.01 replace "-" with "" for unnamed tracks
 
 
 // nofish_Write tracknames to textfile.eel
