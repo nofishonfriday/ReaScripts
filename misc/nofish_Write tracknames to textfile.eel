@@ -1,11 +1,11 @@
--- @version 1.0
--- @description Write tracknames to textfile
--- @author nofish
--- @about
---   http://forum.cockos.com/showthread.php?t=169099
--- @changelog
---   + 1.0 Initial release
-
+// Version: 1.01
+// Description: Write tracknames to textfile
+// Author: nofish
+// About:
+//   http://forum.cockos.com/showthread.php?t=169099
+// Changelog:
+//   + 1.0 Initial release
+//   + 1.01 replace "-" with "" for unnamed tracks
 
 
 // nofish_Write tracknames to textfile.eel
@@ -54,28 +54,24 @@ loop(CountTracks(0), // loop through tracks
     // msg_s(#track_name); 
     
     sprintf(#written_trackname, "%03d", i+1);
-    strcat (#written_trackname, "|"); // append " "
+    
+    strcat (#written_trackname, "|"); // append "|"
     !match (#track_name, "") ? // if track_name not ""...
     (
-      strcat (#written_trackname, #track_name) // appen the actual trackname
-    ) : // else if track_name = "" (unnamed track)
-    (
-      #track_name = "-"; // append "-"
-      strcat (#written_trackname, #track_name);
-    ); 
-    strcat (#written_trackname, "\n"); // append newline
+      strcat (#written_trackname, #track_name); // append the actual trackname
+      strcat (#written_trackname, "\n"); // append newline
+    ) : (
+      strcat (#written_trackname, "\n"); // append newline
+    );
+    
     file_length = fwrite(file,#written_trackname,0); // write (append) the string to file
   ); // end of GetTrack()
   i += 1; // increment track number
 ); // end of loop through tracks
 
-file_length > 0 ?
-(
-  msg_s("Done ! Tracknames written to: ");
-  msg_s(#filepath);
-) :
-(
-  msg_s("Something went wrong...")
-);
+
+msg_s("Done ! Tracknames written to: ");
+msg_s(#filepath);
+
 fclose(file); // close the file
 
