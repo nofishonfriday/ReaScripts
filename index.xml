@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="c5481914f055cb01f61c30bbd55333bbac4c59a3">
+<index version="1" name="nofish ReaScripts" commit="bc0129ecc0c94acc9c1881f382e5be379721a5dc">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
@@ -75,7 +75,7 @@
       </metadata>
       <version name="1.0" author="nofish" time="2018-04-30T14:38:46Z">
         <changelog><![CDATA[+ Initial release]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/c5481914f055cb01f61c30bbd55333bbac4c59a3/Loudness/Analyze%20loudness%20of%20master%20output%20in%20time%20selection%20(via%20temp%20render).lua</source>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/bc0129ecc0c94acc9c1881f382e5be379721a5dc/Loudness/Analyze%20loudness%20of%20master%20output%20in%20time%20selection%20(via%20temp%20render).lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Normalize loudness of selected items active take to X LUFS max momentary - no prompt.lua" type="script" desc="Normalize loudness of selected items active take to X LUFS max momentary - no prompt">
