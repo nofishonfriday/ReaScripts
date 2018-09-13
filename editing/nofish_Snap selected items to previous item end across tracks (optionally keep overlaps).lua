@@ -44,6 +44,7 @@ function PrintTakeName(i)
 end
 
 
+-- Main() --
 function Main()
 
   -- reaper.ClearConsole()
@@ -51,7 +52,7 @@ function Main()
   -- Put sel. items in table
   for i = 0, selItemsCount - 1 do
     selItem = reaper.GetSelectedMediaItem(0, i)
-    local tableIdx = i+1 -- Lua uses 1-based tables
+    local tableIdx = i + 1 -- Lua uses 1-based tables
     selItemsTable[tableIdx] = {}
     selItemsTable[tableIdx].item = selItem
     selItemsTable[tableIdx].pos = reaper.GetMediaItemInfo_Value(selItem, "D_POSITION")
@@ -74,6 +75,7 @@ function Main()
     end
   end)
 
+  
   if KEEP_OVERLAPS == true then
     -- Loop through sorted items table and build 'item clusters' table
     -- the item clusters (consisting of 1 or 1+x item(s) which overlap)
@@ -97,7 +99,7 @@ function Main()
 
         if selItemsTable[k].pos < selItemsTable[i]._end then -- following item overlaps w/ cur. one, add to cluster
           Msg("Item " .. i .. " overlaps w/ item " .. k)
-          itemsPerItemsclusterCount = itemsPerItemsclusterCount+1
+          itemsPerItemsclusterCount = itemsPerItemsclusterCount + 1
           
           if selItemsTable[k]._end > selItemsTable[i]._end then -- check where the cluster ends
             endOfItemCluster = selItemsTable[k]._end
@@ -105,7 +107,7 @@ function Main()
 
           i = i + 1
         end -- if selItemsTable[k].pos < selItemsTable[i]._end then
-      end -- for k = i+1, #selItemsTable do
+      end -- for k = i + 1, #selItemsTable do
 
       Msg("itemsPerItemsclusterCount: " .. itemsPerItemsclusterCount)
       Msg("Start of item cluster: " .. startOfItemCluster)

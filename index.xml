@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="043b281a37e093e9caccb07780970fc737747c99">
+<index version="1" name="nofish ReaScripts" commit="5e9b3247ad08e8e4b60f3fc41775581e6d7f7bbf">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
@@ -44,6 +44,21 @@
       <version name="1.0" author="nofish" time="2017-10-03T17:34:55Z">
         <changelog><![CDATA[+ Initial Release]]></changelog>
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/41238a479c399fe3ca5a0a607b920d6c6ad07cdf/editing/nofish_Select%20next%20item%20(in%20time)%20across%20tracks.lua</source>
+      </version>
+    </reapack>
+    <reapack name="nofish_Snap selected items to previous item end across tracks (optionally keep overlaps).lua" type="script" desc="Snap selected items to previous item end across tracks (optionally keep overlaps)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 See this thread for the idea:\line https://forum.cockos.com/showthread.php?t=206841\line In the script's USER CONFIG AREA can be set if item overlaps should be kept or not\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0" author="nofish" time="2018-09-13T23:16:00Z">
+        <changelog><![CDATA[+ Initial Release]]></changelog>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/5e9b3247ad08e8e4b60f3fc41775581e6d7f7bbf/editing/nofish_Snap%20selected%20items%20to%20previous%20item%20end%20across%20tracks%20(optionally%20keep%20overlaps).lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Unselect muted items.lua" type="script" desc="Unselect muted items">
