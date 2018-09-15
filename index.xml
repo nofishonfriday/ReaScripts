@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="5e9b3247ad08e8e4b60f3fc41775581e6d7f7bbf">
+<index version="1" name="nofish ReaScripts" commit="b2c2690bd9f577731a4573880185693c2cee6286">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
@@ -58,7 +58,7 @@
       </metadata>
       <version name="1.0" author="nofish" time="2018-09-13T23:16:00Z">
         <changelog><![CDATA[+ Initial Release]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/5e9b3247ad08e8e4b60f3fc41775581e6d7f7bbf/editing/nofish_Snap%20selected%20items%20to%20previous%20item%20end%20across%20tracks%20(optionally%20keep%20overlaps).lua</source>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/b2c2690bd9f577731a4573880185693c2cee6286/editing/nofish_Snap%20selected%20items%20to%20previous%20item%20end%20across%20tracks%20(optionally%20keep%20overlaps).lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Unselect muted items.lua" type="script" desc="Unselect muted items">
