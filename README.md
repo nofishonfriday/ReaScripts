@@ -5,10 +5,10 @@ https://reapack.com/
 It isn't enabled by default in Reapack though,  
 so it must first be imported:  
 
-https://github.com/cfillion/reapack/wiki#import-a-repository  
+https://reapack.com/user-guide#import-repositories
 
 
 Use this link for importing:  
-https://raw.githubusercontent.com/nofishonfriday/ReaScripts/master/index.xml  
+https://raw.githubusercontent.com/nofishonfriday/ReaScripts/master/index.xml
 
 
