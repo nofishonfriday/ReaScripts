@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="dcef4f7789d681a83107fa367e69c7c70d133fce">
+<index version="1" name="nofish ReaScripts" commit="6b16408947bf16bf0d2d2615ac90e2a0433a72b6">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
@@ -279,6 +279,23 @@
     </reapack>
   </category>
   <category name="misc">
+    <reapack name="Mute first n hardware outs on tracks that are currently recording.lua" type="script" desc="Mute first n hardware outs on tracks that are currently recording">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 See this thread for the idea:\line https://forum.cockos.com/showthread.php?t=197728\par}
+}
+]]></description>
+        <link rel="donation">https://paypal.me/nofish</link>
+      </metadata>
+      <version name="1.0" author="nofish" time="2018-10-10T14:31:48Z">
+        <changelog><![CDATA[+ Initial Release
++ Script can be assigned to a toolbar button (lights when active), press again to exit]]></changelog>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/a117ae162bd4ffd47c16ba912060b314e2edb3dc/misc/Mute%20first%20n%20hardware%20outs%20on%20tracks%20that%20are%20currently%20recording.lua</source>
+      </version>
+    </reapack>
     <reapack name="nofish_Dynamic mixer.lua" type="script" desc="Dynamic Mixer (WIP)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
