@@ -7,8 +7,8 @@
  * About:
  *  See this thread for the idea:  
  *  https://forum.cockos.com/showthread.php?t=197728   
- * Known issues:  
- * - Doesn't work correctly in 'Record mode: auto-punch selected items'
+ *  Known issues:  
+ *  - Doesn't work correctly in 'Record mode: auto-punch selected items'
 --]]
 
 --[[
