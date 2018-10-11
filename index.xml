@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="6b16408947bf16bf0d2d2615ac90e2a0433a72b6">
+<index version="1" name="nofish ReaScripts" commit="53bbeb44eb37f293a5339ebba7ae96465036edc0">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
@@ -285,7 +285,8 @@
 {\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
 \widowctrl\hyphauto
 
-{\pard \ql \f0 \sa180 \li0 \fi0 See this thread for the idea:\line https://forum.cockos.com/showthread.php?t=197728\par}
+{\pard \ql \f0 \sa180 \li0 \fi0 See this thread for the idea:\line https://forum.cockos.com/showthread.php?t=197728\line Known issues:\par}
+{\pard \ql \f0 \sa0 \li360 \fi-360 \bullet \tx360\tab Doesn't work correctly in 'Record mode: auto-punch selected items'\sa180\par}
 }
 ]]></description>
         <link rel="donation">https://paypal.me/nofish</link>
@@ -293,7 +294,7 @@
       <version name="1.0" author="nofish" time="2018-10-10T14:31:48Z">
         <changelog><![CDATA[+ Initial Release
 + Script can be assigned to a toolbar button (lights when active), press again to exit]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/a117ae162bd4ffd47c16ba912060b314e2edb3dc/misc/Mute%20first%20n%20hardware%20outs%20on%20tracks%20that%20are%20currently%20recording.lua</source>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/53bbeb44eb37f293a5339ebba7ae96465036edc0/misc/Mute%20first%20n%20hardware%20outs%20on%20tracks%20that%20are%20currently%20recording.lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Dynamic mixer.lua" type="script" desc="Dynamic Mixer (WIP)">
