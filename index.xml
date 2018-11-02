@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="5f17029121369b2941f012405eb963c56c473794">
+<index version="1" name="nofish ReaScripts" commit="48718a42464b9952825c6814ee0d6845f5c7508e">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
@@ -299,6 +299,11 @@
       <version name="1.01" author="nofish" time="2018-10-30T10:41:53Z">
         <changelog><![CDATA[+ Add option to disable input monitoring during pre-roll]]></changelog>
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/5f17029121369b2941f012405eb963c56c473794/misc/Mute%20first%20n%20hardware%20outs%20on%20tracks%20that%20are%20currently%20recording.lua</source>
+      </version>
+      <version name="1.02" author="nofish" time="2018-11-02T14:01:47Z">
+        <changelog><![CDATA[# Only disable input monitoring when in Tape Auto Style mode
+# Fix ever growing tables (init at each rec. start)]]></changelog>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/48718a42464b9952825c6814ee0d6845f5c7508e/misc/Mute%20first%20n%20hardware%20outs%20on%20tracks%20that%20are%20currently%20recording.lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Dynamic mixer.lua" type="script" desc="Dynamic Mixer (WIP)">
