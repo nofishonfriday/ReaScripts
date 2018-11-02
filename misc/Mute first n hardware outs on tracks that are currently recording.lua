@@ -1,6 +1,6 @@
 --[[
  * ReaScript Name: Mute first n hardware outs on tracks that are currently recording
- * Version: 1.01
+ * Version: 1.02
  * Author: nofish
  * Author URI: https://forum.cockos.com/member.php?u=6870  
  * Donation: https://paypal.me/nofish
@@ -25,6 +25,9 @@
   + Script can be assigned to a toolbar button (lights when active), press again to exit
  * v1.01 (October 30 2018)
   + Add option to disable input monitoring during pre-roll
+ * v1.02 (November 02 2018)
+  # Only disable input monitoring when in Tape Auto Style mode
+  # Fix ever growing tables (init at each rec. start)
 --]]
 
 
@@ -60,6 +63,14 @@ function PromptUser()
   end
 end
 --]]
+
+function InitTables() -- init global tables and tables idx's
+  tracksWhoseHWoutsWereSetToMute_Table = {}
+  tracksWhoseHWoutsWereSetToMute_Table_Idx = 1
+  
+  tracksWhoseRecMonWereDisabled_Table = {}
+  tracksWhoseRecMonWereDisabled_Table_Idx = 1
+end
 
 -- https://github.com/Ultraschall/ultraschall-and-reaper-docs/blob/master/Docs/Reaper-ConfigVariables-Documentation.txt#L4371
 recModeNormalNoPreroll, recModeNormalWithPreroll, recModeTimeSelAutopunch, recModeAutopunchSelItems = 0, 1, 2, 3
@@ -124,9 +135,6 @@ function WaitForTimeSelEndAndUnmuteHWouts()
   end
 end
 
-
-tracksWhoseHWoutsWereSetToMute_Table = {}
-tracksWhoseHWoutsWereSetToMute_Table_Idx = 1
 function MuteHWOuts()
   
   tracksCount = reaper.CountTracks(0)
@@ -197,11 +205,9 @@ function WaitForPrerollEndandReenableInputMonitoring()
   end
 end
 
-tracksWhoseRecMonWereDisabled_Table = {}
-tracksWhoseRecMonWereDisabled_Table_Idx = 1
-recMonDisabledOnAtLeastOneTrack = false
 function DisableInputMonitoring()
-
+  recMonDisabledOnAtLeastOneTrack = false
+  
   tracksCount = reaper.CountTracks(0)
   for i = 0, tracksCount-1  do
     local tr =  reaper.GetTrack(0, i)
@@ -210,13 +216,11 @@ function DisableInputMonitoring()
       -- Msg(isRecArmed)
       recMonMode =  reaper.GetMediaTrackInfo_Value(tr, "I_RECMON")
       -- Msg("Mon mode" .. recMonMode)
-      if recMonMode == 1 or recMonMode == 2 then -- normal or tapestyle
+      if recMonMode == 2 then -- tapestyle
         reaper.SetMediaTrackInfo_Value( tr, "I_RECMON", 0) -- off
         recMonDisabledOnAtLeastOneTrack = true
         
-        tracksWhoseRecMonWereDisabled_Table[tracksWhoseRecMonWereDisabled_Table_Idx] = {}
-        tracksWhoseRecMonWereDisabled_Table[tracksWhoseRecMonWereDisabled_Table_Idx].tr = tr
-        tracksWhoseRecMonWereDisabled_Table[tracksWhoseRecMonWereDisabled_Table_Idx].recMonMode = recMonMode
+        tracksWhoseRecMonWereDisabled_Table[tracksWhoseRecMonWereDisabled_Table_Idx] = tr
         tracksWhoseRecMonWereDisabled_Table_Idx = tracksWhoseRecMonWereDisabled_Table_Idx + 1 
       end
     end -- if isRecArmed == 1 then  
@@ -228,12 +232,11 @@ function DisableInputMonitoring()
 end
 
 function ReenableInputMonitoring()
-  for i = 1, #tracksWhoseRecMonWereDisabled_Table do
+  for _, tr in ipairs(tracksWhoseRecMonWereDisabled_Table) do
     -- Msg("In table")
-    tr = tracksWhoseRecMonWereDisabled_Table[i].tr
     if reaper.ValidatePtr(tr, "MediaTrack*") then
       -- Msg("Validated!")
-      reaper.SetMediaTrackInfo_Value(tr, "I_RECMON",  tracksWhoseRecMonWereDisabled_Table[i].recMonMode)
+      reaper.SetMediaTrackInfo_Value(tr, "I_RECMON", 2)
     end
   end
 end
@@ -248,7 +251,8 @@ function Main()
   if lastIsRecording ~= isRecording then
     -- Msg("Recording state: " .. isRecording)
     
-    if isRecording == 1 then  
+    if isRecording == 1 then
+      InitTables()
       recMode = GetRecMode()
       prerollStopPos = reaper.GetCursorPosition()
       if recMode == recModeNormalNoPreroll then
@@ -289,6 +293,8 @@ end -- Main()
 --------------------------------------
 -- start
 --------------------------------------
+InitTables()
+
 -- set toggle state to on
 _, _, sectionID, cmdID, _, _, _ = reaper.get_action_context()
 reaper.SetToggleCommandState(sectionID, cmdID, 1);
