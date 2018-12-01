@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="24c478c7984e3ec8220a5ca6d40b404821a65f40">
+<index version="1" name="nofish ReaScripts" commit="bf653b6afb73223cf6ee77542e168c30fbb96940">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
@@ -226,6 +226,22 @@
       <version name="1.02" author="juliansader, nofish" time="2017-06-01T01:20:37Z">
         <changelog><![CDATA[+ nofish: moved script from MIDI editor to Main section (since it's based on item selection)]]></changelog>
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/edef946377847905dd6d00a17561247fd014f935/MIDI%20(Main)/js_nofish_Set%20all%20events%20of%20selected%20MIDI%20items%20to%20specific%20channel.lua</source>
+      </version>
+    </reapack>
+    <reapack name="nofish_Set all note ons in all selected items MIDI takes to specific velocity (prompt).lua" type="script" desc="Set all note ons in all selected items MIDI takes to specific velocity (prompt)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Sets all note ons in all selected items MIDI takes to specific velocity\line Opens a prompt at script start to set destination velocity (if at least one item conatining a MIDI take is selected)\par}
+}
+]]></description>
+        <link rel="donation">https://paypal.me/nofish</link>
+      </metadata>
+      <version name="1.0" author="nofish, thanks juliansader" time="2018-12-01T19:33:00Z">
+        <changelog><![CDATA[+ initial release]]></changelog>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/bf653b6afb73223cf6ee77542e168c30fbb96940/MIDI%20(Main)/nofish_Set%20all%20note%20ons%20in%20all%20selected%20items%20MIDI%20takes%20to%20specific%20velocity%20(prompt).lua</source>
       </version>
     </reapack>
   </category>
