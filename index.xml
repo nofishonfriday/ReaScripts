@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="bf653b6afb73223cf6ee77542e168c30fbb96940">
+<index version="1" name="nofish ReaScripts" commit="aa3d7477331cd30de99caab14e368d99835dd1c8">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
@@ -276,6 +276,10 @@
       <version name="1.01" author="nofish" time="2018-02-22T16:57:21Z">
         <changelog><![CDATA[# fix: selected CC's get unintentionally muted, thanks FnA]]></changelog>
         <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/e24b6073ada3eef2fad289bcb8f35062978af7be/MIDI%20Editor/Smart%20toggle%20mute%20note(s)%20(under%20mouse).lua</source>
+      </version>
+      <version name="1.02" author="nofish" time="2019-01-29T23:02:27Z">
+        <changelog><![CDATA[# fix: remove some weird chars]]></changelog>
+        <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/aa3d7477331cd30de99caab14e368d99835dd1c8/MIDI%20Editor/Smart%20toggle%20mute%20note(s)%20(under%20mouse).lua</source>
       </version>
     </reapack>
   </category>
