@@ -1,6 +1,6 @@
 --[[
  * ReaScript Name: Smart toggle mute note(s) (under mouse)
- * Version: 1.01
+ * Version: 1.02
  * Author: nofish
  * About:
  *  Assign script to shortcut (MIDI editor section).  
@@ -18,6 +18,9 @@
 
   * v1.01 - May 21 2017
     # fix: selected CC's get unintentionally muted, thanks FnA
+	
+  * v1.02 - January 30 2018
+    # fix: remove some weird chars
 --]]
 
 
