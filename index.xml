@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="aa3d7477331cd30de99caab14e368d99835dd1c8">
+<index version="1" name="nofish ReaScripts" commit="35f053b941ef7c5cd17b9cff999f53cd5159671c">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
@@ -258,6 +258,25 @@
       </metadata>
       <version name="1.0" author="nofish" time="2017-05-20T22:26:01Z">
         <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/2243cb128c2cbe5af7d5d1953732632fd93cbb7f/MIDI%20Editor/nofish_Turn%20toolbar%20btn%20on%20when%20take%20pooled.eel</source>
+      </version>
+    </reapack>
+    <reapack name="Show midi note name in tooltip_nofish mod.lua" type="script" desc="Show midi note name in tooltip_nofish mod.lua">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Show tooltip with note name and position under mouse cursor\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.01" author="SeXan / mod by nofish" time="2019-03-27T02:35:12Z">
+        <changelog><![CDATA[+ Support assigning script to toolbar button (lights when active)
++ Register in MIDI editor section (instead of Main section)
++ Display 16th (instead of ticks)
+# Account for Pref: MIDI octave name display offset
+# Remove tooltip if mouse cursor outside piano roll]]></changelog>
+        <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/35f053b941ef7c5cd17b9cff999f53cd5159671c/MIDI%20Editor/Show%20midi%20note%20name%20in%20tooltip_nofish%20mod.lua</source>
       </version>
     </reapack>
     <reapack name="Smart toggle mute note(s) (under mouse).lua" type="script" desc="Smart toggle mute note(s) (under mouse)">
