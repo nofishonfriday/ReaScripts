@@ -1,12 +1,11 @@
 --[[
- * Version: 1.01
+ * Version: 1.02
  * ReaScript Name: Analyze loudness of master output in time selection (via temp render)
  * Author: nofish
  * About:
  *  Renders a file, analyzes and displays loudness values and deletes the file  
- *  In the scripts USER CONFIG AREA can be set if True Peak should be analyzed (slower) or not
- *  Note: In REAPER's 'Render' dialog:  
- *  'Bounds: Time selection' must be set 
+ *  In the scripts USER CONFIG AREA can be set if True Peak should be analyzed (slower) or not  
+ *  Requires REAPER v5.974, SWS v2.9.6
 --]]
 
 --[[
@@ -15,11 +14,14 @@
     + Initial release
  * v1.01 July 31 2018
      + Set 'Source: Master mix' and 'Add rendered items to new tracks in project' automatically
+ * v1.02 April 03 2019
+     + Use Render API (required render settings are set automatically)
 --]]
 
 -- USER CONFIG AREA -----------------------------------------------------------
 
-analyzeTruePeak = true -- true/false: analyze true peak (slower) or not
+analyzeTruePeak  = false -- true/false: analyze true peak (slower) or not
+keepRenderedFile = false -- true/false: keep the rendered file in REAPER or delete it automatically
 
 ------------------------------------------------------- END OF USER CONFIG AREA
 
@@ -28,9 +30,9 @@ end
 reaper.defer(preventUndo)
 
 -- Check whether the required version of REAPER / SWS is available
-if not reaper.NF_AnalyzeTakeLoudness then
-  reaper.ShowMessageBox("This script requires REAPER v5.21 / SWS v2.9.6 or above.", "ERROR", 0)
-  return(false) 
+if not reaper.NF_AnalyzeTakeLoudness or not reaper.GetSetProjectInfo then
+  reaper.ShowMessageBox("This script requires REAPER v5.bla / SWS v2.9.6 or above.", "ERROR", 0)
+  return
 end
 
 reaper.ClearConsole()
@@ -39,20 +41,56 @@ function msg(m)
   return reaper.ShowConsoleMsg(tostring(m) .. "\n")
 end
 
+local function errorHandler(errObj, errMsg)
+  -- set orig. render settings back
+  SetRenderSettings(rendersettings, boundsflag, addtoproj, renderpattern)
+end
+
 function round(num, numDecimalPlaces)
   local mult = 10^(numDecimalPlaces or 0)
   return math.floor(num * mult + 0.5) / mult
 end
 
+-- render settings (constants), see API doc
+c_source_mastermix = 0
+c_bounds_timesel = 2
+c_add_rendered_to_proj = 1
+c_renderpattern = "_temp_$project_masterLoudnessAnalyze"
 
-function Main()
+
+-- simple function wrappers for a bit less typing
+function GetProjInfo(desc, value)
+  return  reaper.GetSetProjectInfo(0, desc, value, false)
+end
+function SetProjInfo(desc, value)
+  return  reaper.GetSetProjectInfo(0, desc, value, true)
+end
+
+function GetRenderSettings()
+  rendersettings   = GetProjInfo("RENDER_SETTINGS", -1)
+  boundsflag       = GetProjInfo("RENDER_BOUNDSFLAG", -1)
+  addtoproj        = GetProjInfo("RENDER_ADDTOPROJ", -1)
+  
+  _, renderpattern = reaper.GetSetProjectInfo_String(0, "RENDER_PATTERN", "", false)
+end
+
+function SetRenderSettings(_rendersettings, _boundsflag, _addtoproj, _renderpattern, _renderclose)
+  SetProjInfo("RENDER_SETTINGS", _rendersettings)
+  SetProjInfo("RENDER_BOUNDSFLAG", _boundsflag) 
+  SetProjInfo("RENDER_ADDTOPROJ",  _addtoproj)
+  
+  reaper.GetSetProjectInfo_String(0, "RENDER_PATTERN", _renderpattern, true) 
+end
+
+
+local function Main()
    
   tracksCountBeforeRender = reaper.CountTracks(0)
-  reaper.Main_OnCommand(41824, 0) -- File: Render project, using the most recent render settings
+  reaper.Main_OnCommand(42230, 0) -- File: Render project, using the most recent render settings, auto-close render dialog
   tracksCountAfterRender = reaper.CountTracks(0)
   
   if tracksCountAfterRender ~= tracksCountBeforeRender+1 then 
-    msg("Seems like something went wrong.\nIs 'Add rendered items to new tracks in project' in 'Render'dialog ?")
+    msg("Seems like something went wrong...")
     return
   end
   
@@ -79,30 +117,27 @@ function Main()
   end
   
   -- delete temp track + temp file on HD
-  pcmSource = reaper.GetMediaItemTake_Source(renderedItemActTake)
-  mediaItem =  reaper.GetMediaItemTake_Item(renderedItemActTake)
-  fileName = reaper.GetMediaSourceFileName(pcmSource, '')
-  mediaTrack = reaper.GetMediaItem_Track(mediaItem)
-  reaper.DeleteTrack(mediaTrack)
-  os.remove(fileName)
-  reaper.UpdateArrange()
+  if not keepRenderedFile then
+    pcmSource  = reaper.GetMediaItemTake_Source(renderedItemActTake)
+    mediaItem  = reaper.GetMediaItemTake_Item(renderedItemActTake)
+    fileName   = reaper.GetMediaSourceFileName(pcmSource, '')
+    mediaTrack = reaper.GetMediaItem_Track(mediaItem)
+    reaper.DeleteTrack(mediaTrack)
+    os.remove(fileName)
+    reaper.UpdateArrange()
+  end
   
-end
+end -- Main()
 
 
 reaper.Undo_BeginBlock()
+  -- get orig. (current) render settings
+  GetRenderSettings()
+  -- set appropriate render settings for Loudness analysis
+  SetRenderSettings(c_source_mastermix, c_bounds_timesel, c_add_rendered_to_proj, c_renderpattern) 
   
-  orig_projrenderaddtoproj = reaper.SNM_GetIntConfigVar("projrenderaddtoproj", -666)
-  orig_projrenderstems = reaper.SNM_GetIntConfigVar("projrenderstems", -666)
+  xpcall(Main, errorHandler)
   
-  reaper.SNM_SetIntConfigVar("projrenderaddtoproj", 1) -- set "Add rendered items to new tracks in project"
-  reaper.SNM_SetIntConfigVar("projrenderstems", 0) -- set "Source: Master mix"
-  
-  Main()
-  
-  -- set ini values back to original
-  reaper.SNM_SetIntConfigVar("projrenderaddtoproj", orig_projrenderaddtoproj)
-  reaper.SNM_SetIntConfigVar("projrenderstems",  orig_projrenderstems)
-  
+  -- set orig. render settings back
+  SetRenderSettings(rendersettings, boundsflag, addtoproj, renderpattern)
 reaper.Undo_EndBlock("Script: Analyze loudness of master output in time sel.", -1)
-
