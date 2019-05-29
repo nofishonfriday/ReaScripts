@@ -1,5 +1,5 @@
 --[[
- * ReaScript Name: Split items at time selection, elese at edit cursor, crossfading to the left
+ * ReaScript Name: Split items at time selection, else at edit cursor, crossfading to the left
  * Version: 1.0
  * Author: nofish
  * Author URI: https://forum.cockos.com/member.php?u=6870
@@ -12,6 +12,8 @@
  * Changelog:
  * v1.0 (May 29 2019)
   + Initial Release
+ * v1.01 (May 29 2019)
+  # Fix typo in title
 --]]
 
 -- thanks X-Raym
