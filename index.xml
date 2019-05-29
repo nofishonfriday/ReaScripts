@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="dd04a6030cb6b1369b06490e0abeb0a746e6544e">
+<index version="1" name="nofish ReaScripts" commit="424458c45c187caf45815d9669461394ad7e0f4f">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
@@ -59,6 +59,10 @@
       <version name="1.0" author="nofish" time="2019-05-29T17:08:34Z">
         <changelog><![CDATA[+ Initial Release]]></changelog>
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/89ec298a33911285efe699302698bb098d796d2c/editing/nofish_Split%20items%20at%20time%20selection,%20else%20at%20edit%20cursor,%20crossfading%20to%20the%20left.lua</source>
+      </version>
+      <version name="1.01" author="nofish" time="2019-05-29T17:32:16Z">
+        <changelog><![CDATA[# Fix typo in title]]></changelog>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/424458c45c187caf45815d9669461394ad7e0f4f/editing/nofish_Split%20items%20at%20time%20selection,%20else%20at%20edit%20cursor,%20crossfading%20to%20the%20left.lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Unselect muted items.lua" type="script" desc="Unselect muted items">
