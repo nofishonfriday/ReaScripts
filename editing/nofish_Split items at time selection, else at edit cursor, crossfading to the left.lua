@@ -1,6 +1,6 @@
 --[[
  * ReaScript Name: Split items at time selection, else at edit cursor, crossfading to the left
- * Version: 1.01
+ * Version: 1.02
  * Author: nofish
  * Author URI: https://forum.cockos.com/member.php?u=6870
  * Extensions: SWS/S&M 2.8.1
@@ -14,6 +14,8 @@
   + Initial Release
  * v1.01 (May 29 2019)
   # Fix typo in title
+ * v1.02 (May 30 2019)
+  # Avoid 'No time selection active' pop up
 --]]
 
 -- thanks X-Raym
@@ -44,7 +46,13 @@ function Main()
   reaper.Undo_BeginBlock()
  
   itemsCount1 =  reaper.CountMediaItems(0)
-  reaper.Main_OnCommand(40061, 0) -- Split items at time selection
+  
+  start_time, end_time = reaper.GetSet_LoopTimeRange2(0, false, false, 0, 0, false)
+  -- check if TS set, otherwise REAPER would show warning msg. ('no TS active') when running below action
+  if start_time ~= end_time then
+    reaper.Main_OnCommand(40061, 0) -- Split items at time selection
+  end
+  
   itemsCount2 =  reaper.CountMediaItems(0)
   
   if itemsCount1 == itemsCount2 then -- no 'Split items at time selection' happened
