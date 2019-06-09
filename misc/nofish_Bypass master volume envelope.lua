@@ -5,9 +5,8 @@
  * Donation: https://paypal.me/nofish
  * Extensions: SWS
  * About:
- *  see URL, needs SWS installed: http://www.sws-extension.org/
- * Link:
- *	https://forum.cockos.com/showthread.php?t=221772
+ *	see 'Website', needs SWS installed: http://www.sws-extension.org/
+ * Link: https://forum.cockos.com/showthread.php?t=221772
 --]]
 
 --[[
