@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="a1842f4727c1f4bdd0aa1f4af74b81e0b64c96d1">
+<index version="1" name="nofish ReaScripts" commit="09434dca3f3f078c9a7b27ef2bc286bde40f23b1">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
@@ -351,12 +351,19 @@
     </reapack>
     <reapack name="nofish_Bypass master volume envelope.lua" type="script" desc="Bypass master volume envelope">
       <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 see 'Website' button, needs SWS installed: http://www.sws-extension.org/\par}
+}
+]]></description>
         <link rel="website">https://forum.cockos.com/showthread.php?t=221772</link>
         <link rel="donation">https://paypal.me/nofish</link>
       </metadata>
       <version name="1.0" author="nofish" time="2019-06-09T15:13:57Z">
         <changelog><![CDATA[+ initial release]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/a1842f4727c1f4bdd0aa1f4af74b81e0b64c96d1/misc/nofish_Bypass%20master%20volume%20envelope.lua</source>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/09434dca3f3f078c9a7b27ef2bc286bde40f23b1/misc/nofish_Bypass%20master%20volume%20envelope.lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Dynamic mixer.lua" type="script" desc="Dynamic Mixer (WIP)">
