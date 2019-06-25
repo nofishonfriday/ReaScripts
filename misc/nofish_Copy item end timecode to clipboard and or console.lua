@@ -1,6 +1,6 @@
 --[[
  * ReaScript Name: Copy item end timecode to clipboard and or console.lua
- * Version: 1.0
+ * Version: 1.01
  * Author: nofish
  * Donation: https://paypal.me/nofish
  * About: Copies first sel. item's end timecode to cliboard and / or shows it in console (see script's USER CONFIG AREA)
@@ -9,6 +9,8 @@
   
  * v1.0 - June 25 2019
     + initial release
+ * v1.01 - June 25 2019
+    # tweak string formatting
 --]]
 
 
@@ -36,7 +38,14 @@ function SecondsToTimecode(seconds)
   hours     = string.format("%01.f", math.floor(fullsecs/3600))
   mins      = string.format("%01.f", math.floor(fullsecs/60 - (hours*60)))
   secs      = string.format("%02.f", math.floor(fullsecs - hours*3600 - mins*60))
-  millisecs = string.format("%03.f", string.sub(secsfrac, 2, 5))
+  millisecs = string.sub(secsfrac, 2, 5)
+  -- add trailing zero(s) for milliseconds
+  msLength = string.len(millisecs)
+  if msLength == 2 then
+    millisecs = millisecs .. "00"
+  elseif msLength == 3 then
+    millisecs = millisecs .. "0"
+  end
   
   if isNegative == true then
     tc = tc .. "-"
