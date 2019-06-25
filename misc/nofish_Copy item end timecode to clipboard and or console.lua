@@ -3,8 +3,7 @@
  * Version: 1.0
  * Author: nofish
  * Donation: https://paypal.me/nofish
- * About:
- *  Copies first sel. item's end timecode to cliboard and / or shows it in console (see script's USER CONFIG AREA)
+ * About: Copies first sel. item's end timecode to cliboard and / or shows it in console (see script's USER CONFIG AREA)
 --[[
  * Changelog:
   
