@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="09434dca3f3f078c9a7b27ef2bc286bde40f23b1">
+<index version="1" name="nofish ReaScripts" commit="9ee67c82892dec0113daba16d0aba5a0d70b846f">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
@@ -364,6 +364,22 @@
       <version name="1.0" author="nofish" time="2019-06-09T15:13:57Z">
         <changelog><![CDATA[+ initial release]]></changelog>
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/09434dca3f3f078c9a7b27ef2bc286bde40f23b1/misc/nofish_Bypass%20master%20volume%20envelope.lua</source>
+      </version>
+    </reapack>
+    <reapack name="nofish_Copy item end timecode to clipboard and or console.lua" type="script" desc="Copy item end timecode to clipboard and or console.lua">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Copies first sel. item's end timecode to cliboard and / or shows it in console (see script's USER CONFIG AREA)\par}
+}
+]]></description>
+        <link rel="donation">https://paypal.me/nofish</link>
+      </metadata>
+      <version name="1.0" author="nofish" time="2019-06-25T22:07:02Z">
+        <changelog><![CDATA[+ initial release]]></changelog>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/9ee67c82892dec0113daba16d0aba5a0d70b846f/misc/nofish_Copy%20item%20end%20timecode%20to%20clipboard%20and%20or%20console.lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Dynamic mixer.lua" type="script" desc="Dynamic Mixer (WIP)">
