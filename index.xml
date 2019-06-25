@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="65b91181ad2a1c402a4f9b23dbbd85b115612d5e">
+<index version="1" name="nofish ReaScripts" commit="a781e1df0e48e1479acc0a1946c219ef9b3a2402">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
@@ -380,6 +380,10 @@
       <version name="1.0" author="nofish" time="2019-06-25T22:07:02Z">
         <changelog><![CDATA[+ initial release]]></changelog>
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/65b91181ad2a1c402a4f9b23dbbd85b115612d5e/misc/nofish_Copy%20item%20end%20timecode%20to%20clipboard%20and%20or%20console.lua</source>
+      </version>
+      <version name="1.01" author="nofish" time="2019-06-25T23:41:30Z">
+        <changelog><![CDATA[# tweak string formatting]]></changelog>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/a781e1df0e48e1479acc0a1946c219ef9b3a2402/misc/nofish_Copy%20item%20end%20timecode%20to%20clipboard%20and%20or%20console.lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Dynamic mixer.lua" type="script" desc="Dynamic Mixer (WIP)">
