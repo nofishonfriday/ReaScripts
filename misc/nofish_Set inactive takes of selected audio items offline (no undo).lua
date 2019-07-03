@@ -1,5 +1,5 @@
 --[[
- * Version: 1.0
+ * Version: 1.01
  * ReaScript Name: Set inactive takes of selected audio items offline (no undo)
  * Author: nofish
  * Donation: https://paypal.me/nofish
@@ -12,9 +12,12 @@
   
  * v1.0 - July 02 2019
   + initial release
+ * v1.01 - July 03 2019
+  # add PreventUIRefresh
 --]]
 
 function Main()  
+  reaper.PreventUIRefresh(1)
   selItemsCount = reaper.CountSelectedMediaItems(0)
   for i = 0, selItemsCount-1  do
     local item = reaper.GetSelectedMediaItem(0, i)
@@ -32,7 +35,7 @@ function Main()
     ::continueTakeLoop::
     end -- end loop through takes
   end -- end loop through sel. items
-   
+  reaper.PreventUIRefresh(-1)
   reaper.UpdateArrange()
 end
 
