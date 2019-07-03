@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="2ad90bec2cb14bd343de40186065901b14b0ed34">
+<index version="1" name="nofish ReaScripts" commit="4c634230b3dbf42b6c0dccd46ba2adb86df9629c">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
@@ -559,6 +559,10 @@
       <version name="1.0" author="nofish" time="2019-07-02T14:14:28Z">
         <changelog><![CDATA[+ initial release]]></changelog>
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/2ad90bec2cb14bd343de40186065901b14b0ed34/misc/nofish_Set%20inactive%20takes%20of%20selected%20audio%20items%20offline%20(no%20undo).lua</source>
+      </version>
+      <version name="1.01" author="nofish" time="2019-07-03T20:45:23Z">
+        <changelog><![CDATA[# add PreventUIRefresh]]></changelog>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/4c634230b3dbf42b6c0dccd46ba2adb86df9629c/misc/nofish_Set%20inactive%20takes%20of%20selected%20audio%20items%20offline%20(no%20undo).lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Solo (exclusive) last focused FX - GUI.lua" type="script" desc="Solo (exclusive) last focused FX - GUI">
