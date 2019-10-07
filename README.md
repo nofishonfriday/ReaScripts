@@ -11,4 +11,4 @@ https://reapack.com/user-guide#import-repositories
 Use this link for importing:  
 https://raw.githubusercontent.com/nofishonfriday/ReaScripts/master/index.xml
 
-
+Licensed under GPLv3
