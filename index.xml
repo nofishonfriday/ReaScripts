@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="b6cbb3b6e9f5d6bda4d39fbc59dc5bb1709900a9">
+<index version="1" name="nofish ReaScripts" commit="2bc57ec65848005450bd9ac48b1e82845e7f31ad">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
@@ -86,6 +86,20 @@
     </reapack>
   </category>
   <category name="Loudness">
+    <reapack name="nofish_Analyze loudness (integrated) per channel of selected items active take.lua" type="script" desc="Analyze loudness (integrated) per channel of selected items active take">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Requires REAPER v5.21 / SWS v2.9.6 or above\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.00" author="nofish" time="2019-12-30T17:39:58Z">
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/2bc57ec65848005450bd9ac48b1e82845e7f31ad/Loudness/nofish_Analyze%20loudness%20(integrated)%20per%20channel%20of%20selected%20items%20active%20take.lua</source>
+      </version>
+    </reapack>
     <reapack name="nofish_Analyze loudness of master output in time selection (via temp render).lua" type="script" desc="Analyze loudness of master output in time selection (via temp render)">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
