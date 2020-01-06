@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="57d167e79e5aef56977ba482a3055399f317d32a">
+<index version="1" name="nofish ReaScripts" commit="37615b7c5c8ad2720f0044c5f2515ad5f2500454">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
@@ -210,6 +210,22 @@
       <version name="1.03" author="nofish" time="2017-09-14T15:34:12Z">
         <changelog><![CDATA[# warn when item is too short for analysis, avoid applying crazy gain in this case]]></changelog>
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/7e84b1d140e4732ef4349dc7a7c7dde8c5fbb34a/Loudness/nofish_Normalize%20loudness%20of%20selected%20items%20active%20take%20to%20X%20LUFS%20max%20short%20term.lua</source>
+      </version>
+    </reapack>
+    <reapack name="nofish_Normalize take pan (Loudness based).lua" type="script" desc="Normalize take pan (Loudness based)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Request: https://forum.cockos.com/showthread.php?t=178277\line Thread: https://forum.cockos.com/showthread.php?t=229544 (thanks ashcat_lt!)\line works via adjusting take pan (stereo takes only)\line in the accompanying script "Normalize take pan (Loudness based) - Set threshold.lua" can be set a a difference threshold (Loudness difference between l/r) over which the script starts processing\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.00" author="nofish" time="2020-01-06T22:52:30Z">
+        <changelog><![CDATA[+ initial release]]></changelog>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/37615b7c5c8ad2720f0044c5f2515ad5f2500454/Loudness/nofish_Normalize%20take%20pan%20(Loudness%20based).lua</source>
+        <source main="main" file="nofish_Normalize take pan (Loudness based) - Set threshold.lua">https://github.com/nofishonfriday/ReaScripts/raw/37615b7c5c8ad2720f0044c5f2515ad5f2500454/Loudness/nofish_Normalize%20take%20pan%20(Loudness%20based)%20-%20Set%20threshold.lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Set normalize loudness to X LUFS max momentary target value.lua" type="script" desc="Set normalize loudness to X LUFS max momentary target value">
