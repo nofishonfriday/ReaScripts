@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="2bc57ec65848005450bd9ac48b1e82845e7f31ad">
+<index version="1" name="nofish ReaScripts" commit="57d167e79e5aef56977ba482a3055399f317d32a">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
@@ -557,6 +557,20 @@
       <version name="1.0" author="nofish" time="2016-12-26T17:49:14Z">
         <changelog><![CDATA[+ Initial release]]></changelog>
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/1ae1f57f8011834f1a892474135c68a518a18f2a/misc/nofish_Save%20track%20FX%20chains%20(for%20sel%20tracks).lua</source>
+      </version>
+    </reapack>
+    <reapack name="nofish_Set all items to timebase Time if at least containing one audio or video take else to timebase Beats (pos., length, rate).lua" type="script" desc="Set all items to timebase Time if at least containing one audio or video take, else to timebase Beats (pos., length, rate)">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 Request: https://forum.cockos.com/showthread.php?t=229817\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.00" author="nofish" time="2020-01-06T19:17:36Z">
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/8730db7b1fa5eadcf37cb0ada109ca54a48c2e06/misc/nofish_Set%20all%20items%20to%20timebase%20Time%20if%20at%20least%20containing%20one%20audio%20or%20video%20take%20else%20to%20timebase%20Beats%20(pos.,%20length,%20rate).lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Solo (exclusive) last focused FX - GUI.lua" type="script" desc="Solo (exclusive) last focused FX - GUI">
