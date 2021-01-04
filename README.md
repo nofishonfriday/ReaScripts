@@ -1,5 +1,7 @@
 ## This repo is now ReaPack compatible
 
+[![check](https://github.com/nofishonfriday/ReaScripts/workflows/check/badge.svg)](https://github.com/nofishonfriday/ReaScripts/actions?query=workflow%3Acheck)
+
 https://reapack.com/
 
 It isn't enabled by default in Reapack though,  
