@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="37615b7c5c8ad2720f0044c5f2515ad5f2500454">
+<index version="1" name="nofish ReaScripts" commit="9f8c562d419f97520e0e4536708d7b0ae9e99e28">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
@@ -663,9 +663,7 @@
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/1ae1f57f8011834f1a892474135c68a518a18f2a/misc/nofish_Write%20tracknames%20to%20textfile.eel</source>
       </version>
       <version name="1.01" author="nofish" time="2018-02-23T16:08:17Z">
-        <changelog><![CDATA[+ 1.0 Initial release
-+ 1.01 replace "-" with "" for unnamed tracks]]></changelog>
-        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/f9b6e7448a6678cad268089e9f336680253dd9b4/misc/nofish_Write%20tracknames%20to%20textfile.eel</source>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/9f8c562d419f97520e0e4536708d7b0ae9e99e28/misc/nofish_Write%20tracknames%20to%20textfile.eel</source>
       </version>
     </reapack>
   </category>
