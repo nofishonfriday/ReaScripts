@@ -1,15 +1,19 @@
 /**
- * Version: 1.0
+ * Version: 1.01
  * ReaScript Name: Turn toolbar button on when take pooled (unfinished, missing API)
  * Author: nofish
  * About: http://forum.cockos.com/showthread.php?t=163359
 **/
 
-/**
- Changelog:
- * v1.0
-    + Initial release
-**/
+/* 
+	* Changelog:
+	* v1.0
+	 + Initial release
+	 
+	* v1.01
+     # s/BR_GetMidiTakePoolGUID/GetMediaSourceType, https://forum.cockos.com/showpost.php?p=1544262&postcount=8
+     # fix changelog formatting
+*/
 
 //
 // to do: 
@@ -24,7 +28,8 @@ function run(finishup)
 (
   // check if take is pooled
   take = MIDIEditor_GetTake(MIDIEditor_GetActive());
-  isPooled = extension_api("BR_GetMidiTakePoolGUID", take, #guidStringOut); // returns true if take is pooled
+  GetMediaSourceType(GetMediaItemTake_Source(take), #type);
+  isPooled = !strcmp(#type, "MIDIPOOL");
   
   // toolbar toggle state example by Jeffos
   get_action_context(#fn,sec,cmd);
