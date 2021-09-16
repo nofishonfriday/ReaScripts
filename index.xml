@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="b6386a0f015854c6c84c238a37dc1ac714c6e3fb">
+<index version="1" name="nofish ReaScripts" commit="b6379c5c06b3fca60f8cc4bcb3c2b51d2c8a2a89">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
@@ -353,6 +353,21 @@
       <version name="1.02" author="nofish" time="2019-01-29T23:02:27Z">
         <changelog><![CDATA[# fix: remove some weird chars]]></changelog>
         <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/aa3d7477331cd30de99caab14e368d99835dd1c8/MIDI%20Editor/Smart%20toggle%20mute%20note(s)%20(under%20mouse).lua</source>
+      </version>
+    </reapack>
+    <reapack name="Turn toolbar button on when editable take is pooled.lua" type="script" desc="Turn toolbar button on when editable take is pooled">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 see http://forum.cockos.com/showthread.php?t=163359\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0.0" author="nofish" time="2021-09-16T20:20:43Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/b6379c5c06b3fca60f8cc4bcb3c2b51d2c8a2a89/MIDI%20Editor/Turn%20toolbar%20button%20on%20when%20editable%20take%20is%20pooled.lua</source>
       </version>
     </reapack>
   </category>
