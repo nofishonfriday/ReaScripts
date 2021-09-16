@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="b6379c5c06b3fca60f8cc4bcb3c2b51d2c8a2a89">
+<index version="1" name="nofish ReaScripts" commit="63fc6fa5a2692b54bd66ee982a360db1a23fd479">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
@@ -295,25 +295,6 @@
     </reapack>
   </category>
   <category name="MIDI Editor">
-    <reapack name="nofish_Turn toolbar btn on when take pooled.eel" type="script" desc="Turn toolbar button on when take pooled (unfinished, missing API)">
-      <metadata>
-        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
-{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
-\widowctrl\hyphauto
-
-{\pard \ql \f0 \sa180 \li0 \fi0 http://forum.cockos.com/showthread.php?t=163359\par}
-}
-]]></description>
-      </metadata>
-      <version name="1.0" author="nofish" time="2017-05-20T22:26:01Z">
-        <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/2243cb128c2cbe5af7d5d1953732632fd93cbb7f/MIDI%20Editor/nofish_Turn%20toolbar%20btn%20on%20when%20take%20pooled.eel</source>
-      </version>
-      <version name="1.01" author="nofish" time="2021-01-25T01:20:18Z">
-        <changelog><![CDATA[# s/BR_GetMidiTakePoolGUID/GetMediaSourceType, https://forum.cockos.com/showpost.php?p=1544262&postcount=8
-# fix changelog formatting]]></changelog>
-        <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/b6386a0f015854c6c84c238a37dc1ac714c6e3fb/MIDI%20Editor/nofish_Turn%20toolbar%20btn%20on%20when%20take%20pooled.eel</source>
-      </version>
-    </reapack>
     <reapack name="Show midi note name in tooltip_nofish mod.lua" type="script" desc="Show midi note name in tooltip_nofish mod.lua">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
