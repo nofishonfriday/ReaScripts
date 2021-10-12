@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="a7a9c8fe1483b93baafcfe6a00e4b89e0eb90b51">
+<index version="1" name="nofish ReaScripts" commit="1f140c4b33bf6801315da80e095b08a1b75e78d3">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
@@ -295,6 +295,21 @@
     </reapack>
   </category>
   <category name="MIDI Editor">
+    <reapack name="nofish_Light toolbar button when editable MIDI take is pooled.lua" type="script" desc="Light toolbar button when editable MIDI take is pooled">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 thread: http://forum.cockos.com/showthread.php?t=163359\line screen capture: https://i.imgur.com/mz8kmGU.gif\line assign script to a MIDI editor toolbar button, button lights up when a pooled take is set to editable in the MIDI editor\line optionally make the script auto-start with REAPER, see https://forum.cockos.com/showthread.php?t=257588\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0.0" author="nofish" time="2021-10-12T21:14:10Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/1f140c4b33bf6801315da80e095b08a1b75e78d3/MIDI%20Editor/nofish_Light%20toolbar%20button%20when%20editable%20MIDI%20take%20is%20pooled.lua</source>
+      </version>
+    </reapack>
     <reapack name="Show midi note name in tooltip_nofish mod.lua" type="script" desc="Show midi note name in tooltip_nofish mod.lua">
       <metadata>
         <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
