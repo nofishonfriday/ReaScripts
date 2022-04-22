@@ -1,5 +1,5 @@
 --[[
- * Version: 1.0
+ * Version: 1.0.1
  * ReaScript Name: Save track FX chains (for sel. tracks)
  * Author: nofish
  * About:
@@ -10,6 +10,8 @@
  Changelog:
  * v1.0
     + Initial release
+ * v1.0.1
+    # Always reference active project (rather than first project tab)
 --]]
 
 
@@ -46,7 +48,7 @@
   ----------------------------------------------------------------------
   
   -- get project name
-    _, project_name = reaper.EnumProjects(0,'')
+    _, project_name = reaper.EnumProjects(-1,'')
     repeat
       st1 = string.find(project_name,'\\') if st1 == nil then st1 = 0 end
       st2 = string.find(project_name,'/') if st2 == nil then st2 = 0 end
