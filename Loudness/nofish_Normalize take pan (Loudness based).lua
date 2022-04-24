@@ -1,6 +1,6 @@
 --[[
- * Version: 1.00
- * ReaScript Name: Normalize take pan (Loudness based)
+ * Version: 1.0.1
+ * ReaScript Name: Normalize take pan (Loudness based) (experimental)
  * Author: nofish
  * Provides: [main] nofish_Normalize take pan (Loudness based) - Set threshold.lua
  * About:
@@ -15,6 +15,8 @@
   
  * v1.00 - January 01 2020
   + initial release
+   * v1.0.1 - April 01 2022
+  # clarify it's experimental
 --]]
 
 -- USER CONFIG AREA -----------------------------------------------------------
