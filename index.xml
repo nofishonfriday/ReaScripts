@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="20905adcbc774f9cf2b84d509f53d497a38e901f">
+<index version="1" name="nofish ReaScripts" commit="a8e1d7e2e693787b353dac98ad03bdb90dcacf48">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
@@ -494,6 +494,21 @@
         <changelog><![CDATA[# change VAL/DB conversion functions
 # make more variables local]]></changelog>
         <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/c7edf396d1db3cdb673f383afc1ad0cacc6199a5/misc/nofish_Normalize%20selected%20items%20active%20take%20to%20X%20dBFS%20true%20peak.lua</source>
+      </version>
+    </reapack>
+    <reapack name="nofish_Print visible (within item start end) take markers on seleted tracks to console.lua" type="script" desc="Print visible (within item start end) take markers on selected tracks to console">
+      <metadata>
+        <description><![CDATA[{\rtf1\ansi\deff0{\fonttbl{\f0 \fswiss Helvetica;}{\f1 Courier;}}
+{\colortbl;\red255\green0\blue0;\red0\green0\blue255;}
+\widowctrl\hyphauto
+
+{\pard \ql \f0 \sa180 \li0 \fi0 thread: https://forum.cockos.com/showthread.php?t=271513\par}
+}
+]]></description>
+      </metadata>
+      <version name="1.0.0" author="nofish" time="2022-10-11T14:51:06Z">
+        <changelog><![CDATA[initial release]]></changelog>
+        <source main="main">https://github.com/nofishonfriday/ReaScripts/raw/a8e1d7e2e693787b353dac98ad03bdb90dcacf48/misc/nofish_Print%20visible%20(within%20item%20start%20end)%20take%20markers%20on%20seleted%20tracks%20to%20console.lua</source>
       </version>
     </reapack>
     <reapack name="nofish_Realtime clock.lua" type="script" desc="Realtime clock">
