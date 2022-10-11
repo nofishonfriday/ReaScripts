@@ -2,9 +2,9 @@
 -- @author nofish
 -- @about
 --   thread: https://forum.cockos.com/showthread.php?t=271513
--- @version 1.0.0
+-- @version 1.0.1
 -- @changelog
---   initial release
+--   minor formatting change (remove dot after project time)
 
 local function Msg(str)
   reaper.ShowConsoleMsg(tostring(str))
@@ -54,7 +54,7 @@ function Main() -- local (i, j, item, take, track)
           end
           takeMarkerPosInProjTimeInSec = itemPos - takeStartOffset + takeMarkerPos
           takeMarkerPosInProjTimeInClock = SecondsToClock(takeMarkerPosInProjTimeInSec)
-          Msg(takeMarkerPosInProjTimeInClock .. ". " .. takeMarkerName .. "\n")
+          Msg(takeMarkerPosInProjTimeInClock .. " " .. takeMarkerName .. "\n")
         end
       end
     end -- ENDLOOP through items on track
