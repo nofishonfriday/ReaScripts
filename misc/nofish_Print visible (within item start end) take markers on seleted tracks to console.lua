@@ -2,9 +2,14 @@
 -- @author nofish
 -- @about
 --   thread: https://forum.cockos.com/showthread.php?t=271513
--- @version 1.0.1
+-- @version 1.0.2
 -- @changelog
---   minor formatting change (remove dot after project time)
+--   # prevent creating undo point
+--   # remove stale Undo_BeginBlock()
+--   # remove useless comment
+
+function preventUndo() end
+reaper.defer(preventUndo)
 
 local function Msg(str)
   reaper.ShowConsoleMsg(tostring(str))
@@ -24,11 +29,10 @@ function SecondsToClock(seconds)
   end
 end
 
-function Main() -- local (i, j, item, take, track)
+function Main()
   reaper.ClearConsole()
   
   lastTrackNumber = -1
-  reaper.Undo_BeginBlock() -- Begining of the undo block. Leave it at the top of your main function.
   selectedTracksCount = reaper.CountSelectedTracks(0)
   for i = 0, selectedTracksCount-1  do
     track = reaper.GetSelectedTrack(0, i)
