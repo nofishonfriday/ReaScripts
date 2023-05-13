@@ -3,7 +3,7 @@
 -- @about
 --   thread: https://forum.cockos.com/showthread.php?t=271513  
 --   Note: for takes with active stretch markers this script doesn't work correctly currently (take marker positions are wrong)!
--- @version 1.0.3
+-- @version 1.0.4
 -- @changelog
 --   # add note about stretch markers not supported currently
 
