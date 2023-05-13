@@ -1,8 +1,8 @@
 -- @description Print visible (within item start end) take markers on selected tracks to console  
---    Note: for takes with active stretch markers this script doesn't work correctly currently (take marker positions are wrong)!
 -- @author nofish
 -- @about
---   thread: https://forum.cockos.com/showthread.php?t=271513
+--   thread: https://forum.cockos.com/showthread.php?t=271513  
+--   Note: for takes with active stretch markers this script doesn't work correctly currently (take marker positions are wrong)!
 -- @version 1.0.3
 -- @changelog
 --   # add note about stretch markers not supported currently
