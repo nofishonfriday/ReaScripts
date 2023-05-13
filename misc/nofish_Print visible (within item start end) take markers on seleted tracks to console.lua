@@ -1,12 +1,11 @@
--- @description Print visible (within item start end) take markers on selected tracks to console
+-- @description Print visible (within item start end) take markers on selected tracks to console  
+--    Note: for takes with active stretch markers this script doesn't work correctly currently (take marker positions are wrong)!
 -- @author nofish
 -- @about
 --   thread: https://forum.cockos.com/showthread.php?t=271513
--- @version 1.0.2
+-- @version 1.0.3
 -- @changelog
---   # prevent creating undo point
---   # remove stale Undo_BeginBlock()
---   # remove useless comment
+--   # add note about stretch markers not supported currently
 
 function preventUndo() end
 reaper.defer(preventUndo)
