@@ -1,5 +1,5 @@
 --[[
- * Version: 1.1.0
+ * Version: 1.1.1
  * ReaScript Name: Save track FX chains (for sel. tracks)
  * Author: nofish
  * About:
@@ -8,6 +8,8 @@
 
 --[[
  Changelog:
+  * v1.1.1
+    # change default saving path back to prev. default
  * v1.1.0
     + handle master track
     + show console msg result 
@@ -26,9 +28,9 @@
 
 --saving_path = 'C:/FX Chains/'
 --saving_path = reaper.GetProjectPath(0,'')..'/FX Chains/'
-saving_path = reaper.GetResourcePath()..'/FXChains/'..'<project_name>'
+-- saving_path = reaper.GetResourcePath()..'/FXChains/'..'<project_name>'
 
---saving_path = reaper.GetResourcePath()..'/FXChains/_saved_chains_from_projects/'..'<project_name>'
+saving_path = reaper.GetResourcePath()..'/FXChains/_saved_chains_from_projects/'..'<project_name>'
 --use above if you want to save in a subfolder of FXChains
   
 ----------------------------------------------------------------------
