@@ -6,20 +6,23 @@
  * Licence: GPL v3
  * REAPER: 5.0
  * Extensions: SWS
- * Version: 1.01
+ * Version: 1.02
  * Provides: [main=midi_editor] .
 --]]
  
 --[[
  * Changelog:
- * v1.0 (2018-15-11)
-  + Initial release by SeXan
+ * v1.02 (2024-05-13)
+  + Display custom note names
+  # Revert actively removing tooltip if mouse cursor outside piano roll (removed REAPER's tooltips too)
  * v1.01 (2019-03-26)
   + Support assigning script to toolbar button (lights when active)
   + Register in MIDI editor section (instead of Main section)
   + Display 16th (instead of ticks)
   # Account for Pref: MIDI octave name display offset
   # Remove tooltip if mouse cursor outside piano roll
+ * v1.0 (2018-15-11)
+  + Initial release by SeXan
 --]]
 
 -- set toolbar button to on
@@ -60,14 +63,27 @@ local window, segment, details = reaper.BR_GetMouseCursorContext()
     for i = 1,#oct_tbl do
       if i == cur_oct_note then
         local note = oct_tbl[i] .. oct - 1 + oct_offset .. " - " .. measures + 1 .. "." .. beats .. "." .. sixteenth
-        if last_x ~= x or last_y ~= y then -- DO NOT UPDATE ALL THE TIME, JUST IF MOUSE POSITION CHANGED 
-          reaper.TrackCtl_SetToolTip( note, x, y - 25, true )
+        if last_x ~= x or last_y ~= y then -- DO NOT UPDATE ALL THE TIME, JUST IF MOUSE POSITION CHANGED
+        
+          -- check if we have custom note names
+          local midiEditor = reaper.MIDIEditor_GetActive()
+          if midiEditor ~= nil then
+           local activeTake = reaper.MIDIEditor_GetTake(midiEditor)
+            if activeTake ~= nil then
+              local sourceTrack =  reaper.GetMediaItemTake_Track(activeTake)
+              local sourceTrackNumber =  reaper.GetMediaTrackInfo_Value(sourceTrack, "IP_TRACKNUMBER")
+              local noteName = reaper.GetTrackMIDINoteName(sourceTrackNumber-1, noteRow, 0)
+              if noteName ~= nil then
+                note =  noteName .. " - " .. measures + 1 .. "." .. beats .. "." .. sixteenth
+              end
+            end
+          end
+          
+          reaper.TrackCtl_SetToolTip(note, x, y - 25, true)
           last_x, last_y = x, y
         end
       end
     end
-  else -- remove tooltip if mouse cursor outside piano roll
-    reaper.TrackCtl_SetToolTip("", x, y - 25, true)
   end
 reaper.defer(main)  
 end
