@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<index version="1" name="nofish ReaScripts" commit="7a36d6ff60cc3e4ff7e253c02e69ead36576e6e3">
+<index version="1" name="nofish ReaScripts" commit="23504182c56c7f4542c2a9b0e01f8f997ba79148">
   <category name="editing">
     <reapack name="nofish_Delete muted items from item selection.lua" type="script" desc="Delete muted items from item selection">
       <metadata>
@@ -332,6 +332,11 @@
 # Account for Pref: MIDI octave name display offset
 # Remove tooltip if mouse cursor outside piano roll]]></changelog>
         <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/35f053b941ef7c5cd17b9cff999f53cd5159671c/MIDI%20Editor/Show%20midi%20note%20name%20in%20tooltip_nofish%20mod.lua</source>
+      </version>
+      <version name="1.02" author="SeXan / mod by nofish" time="2024-05-13T16:26:24Z">
+        <changelog><![CDATA[+ Display custom note names
+# Revert actively removing tooltip if mouse cursor outside piano roll (removed REAPER's tooltips too)]]></changelog>
+        <source main="midi_editor">https://github.com/nofishonfriday/ReaScripts/raw/23504182c56c7f4542c2a9b0e01f8f997ba79148/MIDI%20Editor/Show%20midi%20note%20name%20in%20tooltip_nofish%20mod.lua</source>
       </version>
     </reapack>
     <reapack name="Smart toggle mute note(s) (under mouse).lua" type="script" desc="Smart toggle mute note(s) (under mouse)">
